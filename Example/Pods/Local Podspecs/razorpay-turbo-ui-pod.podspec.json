@@ -1,0 +1,22 @@
+{
+  "name": "razorpay-turbo-ui-pod",
+  "version": "0.1.0",
+  "summary": "A short description of razorpay-turbo-ui-pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/85918255/razorpay-turbo-ui-pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "85918255": "ramprasad.a@razorpay.com"
+  },
+  "source": {
+    "git": "https://github.com/85918255/razorpay-turbo-ui-pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "razorpay-turbo-ui-pod/Classes/**/*"
+}

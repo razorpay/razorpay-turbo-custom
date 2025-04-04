@@ -1,0 +1,16 @@
+PODS:
+  - razorpay-turbo-ui-pod (0.1.0)
+
+DEPENDENCIES:
+  - razorpay-turbo-ui-pod (from `../`)
+
+EXTERNAL SOURCES:
+  razorpay-turbo-ui-pod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  razorpay-turbo-ui-pod: 093ab51387e2251cb2670fc568043b023f61fd83
+
+PODFILE CHECKSUM: 53d12b498d02d7dcd867eba46b0a9b8e59966c85
+
+COCOAPODS: 1.15.0
