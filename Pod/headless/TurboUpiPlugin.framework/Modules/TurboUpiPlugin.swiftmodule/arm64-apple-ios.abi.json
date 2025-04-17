@@ -773,321 +773,6 @@
         "moduleName": "TurboUpiPlugin"
       },
       {
-        "kind": "TypeDecl",
-        "name": "RZPTurboUPI",
-        "printedName": "RZPTurboUPI",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "pluginInstance",
-            "printedName": "pluginInstance()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboPlugin",
-                "printedName": "any Razorpay.UPITurboPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)pluginInstance",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14pluginInstance8Razorpay08UPITurboC0_pyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "paymentPlugin",
-            "printedName": "paymentPlugin()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PluginPaymentDelegate",
-                "printedName": "any Razorpay.PluginPaymentDelegate",
-                "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)paymentPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC07paymentC08Razorpay0C15PaymentDelegate_pyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "turboTPVUIPlugin",
-            "printedName": "turboTPVUIPlugin()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVUIPlugin",
-                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVUIPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC16turboTPVUIPlugin8Razorpay08UPITurboG0_pyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "turboTPVPlugin",
-            "printedName": "turboTPVPlugin()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14turboTPVPlugin8Razorpay08UPITurboG0_pyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isDeviceOnboarded",
-            "printedName": "isDeviceOnboarded()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)isDeviceOnboarded",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC17isDeviceOnboardedSbyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearSDKState",
-            "printedName": "clearSDKState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)clearSDKState",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC13clearSDKStateyyFZ",
-            "moduleName": "TurboUpiPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RZPTurboUPI",
-                "printedName": "TurboUpiPlugin.RZPTurboUPI",
-                "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(im)init",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPICACycfc",
-            "moduleName": "TurboUpiPlugin",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI",
-        "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC",
-        "moduleName": "TurboUpiPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "RazorpayTurboUPI",
-        "printedName": "RazorpayTurboUPI",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Razorpay",
-        "printedName": "Razorpay",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
-        "kind": "Import",
-        "name": "RazorpayTurboUPI",
-        "printedName": "RazorpayTurboUPI",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Razorpay",
-        "printedName": "Razorpay",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
         "kind": "Import",
         "name": "RazorpayTurboUPI",
         "printedName": "RazorpayTurboUPI",
@@ -11726,6 +11411,13 @@
       },
       {
         "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
         "name": "RazorpayTurboUPI",
         "printedName": "RazorpayTurboUPI",
         "declKind": "Import",
@@ -11747,6 +11439,314 @@
         "printedName": "Razorpay",
         "declKind": "Import",
         "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayTurboUPI",
+        "printedName": "RazorpayTurboUPI",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Razorpay",
+        "printedName": "Razorpay",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RZPTurboUPI",
+        "printedName": "RZPTurboUPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pluginInstance",
+            "printedName": "pluginInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboPlugin",
+                "printedName": "any Razorpay.UPITurboPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)pluginInstance",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14pluginInstance8Razorpay08UPITurboC0_pyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "paymentPlugin",
+            "printedName": "paymentPlugin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PluginPaymentDelegate",
+                "printedName": "any Razorpay.PluginPaymentDelegate",
+                "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)paymentPlugin",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC07paymentC08Razorpay0C15PaymentDelegate_pyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "turboTPVUIPlugin",
+            "printedName": "turboTPVUIPlugin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVUIPlugin",
+                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVUIPlugin",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC16turboTPVUIPlugin8Razorpay08UPITurboG0_pyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "turboTPVPlugin",
+            "printedName": "turboTPVPlugin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVPlugin",
+                "printedName": "any Razorpay.UPITurboTPVPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVPlugin",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14turboTPVPlugin8Razorpay08UPITurboG0_pyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isDeviceOnboarded",
+            "printedName": "isDeviceOnboarded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)isDeviceOnboarded",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC17isDeviceOnboardedSbyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearSDKState",
+            "printedName": "clearSDKState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)clearSDKState",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC13clearSDKStateyyFZ",
+            "moduleName": "TurboUpiPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RZPTurboUPI",
+                "printedName": "TurboUpiPlugin.RZPTurboUPI",
+                "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(im)init",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPICACycfc",
+            "moduleName": "TurboUpiPlugin",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI",
+        "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC",
+        "moduleName": "TurboUpiPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Razorpay",
+        "printedName": "Razorpay",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayTurboUPI",
+        "printedName": "RazorpayTurboUPI",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -11856,48 +11856,6 @@
       "offset": 566,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "Dictionary",
-      "offset": 470,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 536,
-      "length": 32,
-      "value": "\"TURBO_PLUGIN_AUTHORIZE_SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 603,
-      "length": 31,
-      "value": "\"TURBO_PLUGIN_AUTHORIZE_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 669,
-      "length": 31,
-      "value": "\"TURBO_PLUGIN_AUTHORIZE_CALLED\""
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "IntegerLiteral",
-      "offset": 743,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
-      "kind": "StringLiteral",
-      "offset": 838,
-      "length": 27,
-      "value": "\"https:\/\/api.razorpay.com\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPluginEntity.swift",
@@ -12066,6 +12024,48 @@
       "offset": 15566,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 470,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 32,
+      "value": "\"TURBO_PLUGIN_AUTHORIZE_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 31,
+      "value": "\"TURBO_PLUGIN_AUTHORIZE_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 31,
+      "value": "\"TURBO_PLUGIN_AUTHORIZE_CALLED\""
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 743,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPaymentPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 27,
+      "value": "\"https:\/\/api.razorpay.com\/\""
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/Checkout\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboUIPaymentPlugin.swift",

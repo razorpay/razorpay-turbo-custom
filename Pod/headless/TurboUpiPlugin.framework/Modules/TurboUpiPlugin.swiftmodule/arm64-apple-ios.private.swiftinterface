@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TurboUpiPlugin
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TurboUpiPlugin
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CoreLocation
 import Foundation
 import Razorpay
@@ -38,16 +38,6 @@ extension TurboUpiPlugin.RazorpayTurbo {
   }
 }
 @objc @_inheritsConvenienceInitializers public class RazorpayTurboTPV : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
-  @objc public class func pluginInstance() -> any Razorpay.UPITurboPlugin
-  @objc public class func paymentPlugin() -> any Razorpay.PluginPaymentDelegate
-  @objc public class func turboTPVUIPlugin() -> any Razorpay.UPITurboTPVUIPlugin
-  @objc public class func turboTPVPlugin() -> any Razorpay.UPITurboTPVPlugin
-  @objc final public class func isDeviceOnboarded() -> Swift.Bool
-  @objc final public class func clearSDKState()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -252,6 +242,16 @@ public protocol RazorpayTokenProvider {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
+  @objc public class func pluginInstance() -> any Razorpay.UPITurboPlugin
+  @objc public class func paymentPlugin() -> any Razorpay.PluginPaymentDelegate
+  @objc public class func turboTPVUIPlugin() -> any Razorpay.UPITurboTPVUIPlugin
+  @objc public class func turboTPVPlugin() -> any Razorpay.UPITurboTPVPlugin
+  @objc final public class func isDeviceOnboarded() -> Swift.Bool
+  @objc final public class func clearSDKState()
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Equatable {}
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Hashable {}
