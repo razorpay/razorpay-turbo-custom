@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'razorpay-turbo-ui-pod_Example' do
+  pod 'razorpay-turbo-ui-pod', :path => '../'
+
+  target 'razorpay-turbo-ui-pod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

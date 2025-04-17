@@ -1,0 +1,6 @@
+framework module razorpay_turbo_ui_pod {
+  umbrella header "razorpay-turbo-ui-pod-umbrella.h"
+
+  export *
+  module * { export * }
+}
