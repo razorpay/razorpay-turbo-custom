@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayTurboUPIUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name RazorpayTurboUPIUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CoreTelephony
 import CryptoKit
@@ -164,6 +164,10 @@ public struct VPAAvailability : Swift.Codable {
 extension UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency public func loadGif(name: Swift.String)
 }
+public enum TPVCoreFiltration {
+  public static func filterBankForTpvAccount(banks: [RazorpayTurboUPIUI.Bank], tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount) -> RazorpayTurboUPIUI.Bank?
+  public static func isPreferenceTPVAccountInRoamingProfile(_ tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount?, _ vpaList: [RazorpayTurboUPIUI.VPADetails]?) -> [RazorpayTurboUPIUI.VPADetails]?
+}
 public struct VPADetails : Swift.Codable, Swift.Equatable {
   public static func == (lhs: RazorpayTurboUPIUI.VPADetails, rhs: RazorpayTurboUPIUI.VPADetails) -> Swift.Bool
   public let id: Swift.String?
@@ -289,10 +293,14 @@ extension Swift.String {
   public var uppercasingFirst: Swift.String {
     get
   }
-  public func lastDigits(_ count: Swift.Int) -> Swift.String
   public func toRupeesComma() -> Swift.String
   public static func currentEpochTimestamp() -> Swift.String
+  public func isExactMatchIgnoringSeparatorsAndCase(_ string2: Swift.String, separators: Foundation.CharacterSet = .whitespacesAndNewlines.union(.punctuationCharacters)) -> Swift.Bool
+  public func lastDigits(_ count: Swift.Int) -> Swift.String
   public var toInt: Swift.Int? {
+    get
+  }
+  public var isNullOrEmpty: Swift.Bool {
     get
   }
   public var isEmptyOrWhiteSpace: Swift.Bool {
@@ -470,11 +478,11 @@ public enum FailedCheck : Swift.CaseIterable {
   case pSelectFlag
   case suspiciousObjCClasses
   public static func == (a: RazorpayTurboUPIUI.FailedCheck, b: RazorpayTurboUPIUI.FailedCheck) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [RazorpayTurboUPIUI.FailedCheck]
   nonisolated public static var allCases: [RazorpayTurboUPIUI.FailedCheck] {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -749,17 +757,28 @@ public struct PayRequest {
   @objc deinit
 }
 public protocol TPVProtocol : AnyObject {
-  func setOrderId(orderId: Swift.String) -> any RazorpayTurboUPIUI.TPVProtocol
-  func setCustomerId(customerId: Swift.String) -> any RazorpayTurboUPIUI.TPVProtocol
-  func setMobileNumber(mobile: Swift.String) -> any RazorpayTurboUPIUI.TPVProtocol
-  func setTpvBankAccount(tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount) -> any RazorpayTurboUPIUI.TPVProtocol
+  func setOrderId(orderId: Swift.String?) -> any RazorpayTurboUPIUI.TPVProtocol
+  func setCustomerId(customerId: Swift.String?) -> any RazorpayTurboUPIUI.TPVProtocol
+  func setMobileNumber(mobile: Swift.String?) -> any RazorpayTurboUPIUI.TPVProtocol
+  func setTpvBankAccount(tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount?) -> any RazorpayTurboUPIUI.TPVProtocol
   func getLinkedUpiAccounts(isFilter: Swift.Bool, _ handler: @escaping RazorpayTurboUPIUI.CallBack<RazorpayTurboUPIUI.TPVEnabledAccounts>)
   func linkNewUpiAccount(amountInDisplayFormat: Swift.String?, _ handler: @escaping RazorpayTurboUPIUI.CallBack<Any>)
   func linkNewUpiAccount(payRequest: RazorpayTurboUPIUI.PayRequest, _ handler: @escaping RazorpayTurboUPIUI.moneyHandler)
+  func tpvUseCasesValidation() -> Swift.Result<RazorpayTurboUPIUI.TPVValidCase, RazorpayTurboUPIUI.TurboSDKError>
 }
 public struct TPVEnabledAccounts {
   public var upiAccounts: [RazorpayTurboUPIUI.VPADetails]?
   public var tpvBankAccounts: [RazorpayTurboUPIUI.TPVBankAccount]?
+}
+public enum TPVValidCase {
+  case withOrderId
+  case withCustomerIdAndAccount
+  case unhandled
+  public static func == (a: RazorpayTurboUPIUI.TPVValidCase, b: RazorpayTurboUPIUI.TPVValidCase) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias moneyHandler = RazorpayTurboUPIUI.CallBack<RazorpayTurboUPIUI.Transaction>
 @_hasMissingDesignatedInitializers public class UPIAccountRankManager {
@@ -773,7 +792,7 @@ public typealias moneyHandler = RazorpayTurboUPIUI.CallBack<RazorpayTurboUPIUI.T
   @objc deinit
 }
 public struct PopularBanks : Swift.Codable {
-  public var iin: Swift.String
+  public var iin: Swift.String?
   public var priority: Swift.String
   public var displayName: Swift.String
   public var bankLogo: Swift.String?
@@ -785,8 +804,16 @@ public struct TPVBankAccount : Swift.Codable {
   public var bankName: Swift.String?
   public var accountNumber: Swift.String
   public var bankLogo: Swift.String?
+  public init(ifsc: Swift.String, bankName: Swift.String? = nil, accountNumber: Swift.String, bankLogo: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+extension RazorpayTurboUPIUI.TPVBankAccount : Swift.Equatable, Swift.Hashable {
+  public static func == (lhs: RazorpayTurboUPIUI.TPVBankAccount, rhs: RazorpayTurboUPIUI.TPVBankAccount) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias PrefetchBank = RazorpayTurboUPIUI.PopularBanks
 extension RazorpayTurboUPIUI.UpiState : Swift.Equatable {}
@@ -824,3 +851,5 @@ extension RazorpayTurboUPIUI.TransactionFlow : Swift.RawRepresentable {}
 extension RazorpayTurboUPIUI.PayRequest.Source : Swift.Equatable {}
 extension RazorpayTurboUPIUI.PayRequest.Source : Swift.Hashable {}
 extension RazorpayTurboUPIUI.PayRequest.Source : Swift.RawRepresentable {}
+extension RazorpayTurboUPIUI.TPVValidCase : Swift.Equatable {}
+extension RazorpayTurboUPIUI.TPVValidCase : Swift.Hashable {}
