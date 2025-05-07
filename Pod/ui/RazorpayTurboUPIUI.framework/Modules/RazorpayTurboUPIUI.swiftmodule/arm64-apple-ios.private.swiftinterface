@@ -167,6 +167,7 @@ extension UIKit.UIImageView {
 public enum TPVCoreFiltration {
   public static func filterBankForTpvAccount(banks: [RazorpayTurboUPIUI.Bank], tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount) -> RazorpayTurboUPIUI.Bank?
   public static func isPreferenceTPVAccountInRoamingProfile(_ tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount?, _ vpaList: [RazorpayTurboUPIUI.VPADetails]?) -> [RazorpayTurboUPIUI.VPADetails]?
+  public static func filterBankAccountsFromTpvAccount(from accounts: [RazorpayTurboUPIUI.BankAccount], tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount) -> [RazorpayTurboUPIUI.BankAccount]
 }
 public struct VPADetails : Swift.Codable, Swift.Equatable {
   public static func == (lhs: RazorpayTurboUPIUI.VPADetails, rhs: RazorpayTurboUPIUI.VPADetails) -> Swift.Bool
