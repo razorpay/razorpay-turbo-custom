@@ -1,0 +1,11 @@
+framework module TurboUpiPlugin {
+  umbrella header "TurboUpiPlugin.h"
+  export *
+
+  module * { export * }
+}
+
+module TurboUpiPlugin.Swift {
+  header "TurboUpiPlugin-Swift.h"
+  requires objc
+}
