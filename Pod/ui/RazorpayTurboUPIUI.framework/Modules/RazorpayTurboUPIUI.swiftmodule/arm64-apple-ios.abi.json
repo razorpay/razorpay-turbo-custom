@@ -19871,6 +19871,20 @@
             "printedName": "CardDetailCallBackProtocol",
             "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolP",
             "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailAccountCallbackProtocol",
+            "printedName": "CardDetailAccountCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailVPADetailsCallbackProtocol",
+            "printedName": "CardDetailVPADetailsCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP"
           }
         ]
       },
@@ -34070,7 +34084,8 @@
             "moduleName": "RazorpayTurboUPIUI",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34103,6 +34118,9 @@
             "mangledName": "$s18RazorpayTurboUPIUI17TPVCoreFiltrationO16matchTPVAccounts3lhs3rhsSbAA14TPVBankAccountV_AHtFZ",
             "moduleName": "RazorpayTurboUPIUI",
             "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -34158,6 +34176,9 @@
             "mangledName": "$s18RazorpayTurboUPIUI17TPVCoreFiltrationO29tpvAccountPresentInPreference0fG021preferenceTpvAccountsSbAA07TPVBankG0VSg_SayAHGSgtFZ",
             "moduleName": "RazorpayTurboUPIUI",
             "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -34313,6 +34334,9 @@
             "mangledName": "$s18RazorpayTurboUPIUI17TPVCoreFiltrationO15areIFSCsSimilarySbSS_SStFZ",
             "moduleName": "RazorpayTurboUPIUI",
             "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -58041,6 +58065,126 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CardDetailAccountCallbackProtocol",
+        "printedName": "CardDetailAccountCallbackProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "accountCreated",
+            "printedName": "accountCreated(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccount",
+                "printedName": "RazorpayTurboUPIUI.BankAccount",
+                "usr": "s:18RazorpayTurboUPIUI11BankAccountV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP14accountCreatedyyAA04BankF0VF",
+            "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP14accountCreatedyyAA04BankF0VF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.CardDetailAccountCallbackProtocol>",
+            "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.CardDetailAccountCallbackProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+        "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+        "moduleName": "RazorpayTurboUPIUI",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardDetailVPADetailsCallbackProtocol",
+        "printedName": "CardDetailVPADetailsCallbackProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "vpaDetailsReceived",
+            "printedName": "vpaDetailsReceived(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RazorpayTurboUPIUI.VPADetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VPADetails",
+                    "printedName": "RazorpayTurboUPIUI.VPADetails",
+                    "usr": "s:18RazorpayTurboUPIUI10VPADetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP18vpaDetailsReceivedyySayAA0F0VGF",
+            "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP18vpaDetailsReceivedyySayAA0F0VGF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.CardDetailVPADetailsCallbackProtocol>",
+            "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.CardDetailVPADetailsCallbackProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+        "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+        "moduleName": "RazorpayTurboUPIUI",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CardDetailCallBackProtocol",
         "printedName": "CardDetailCallBackProtocol",
         "children": [
@@ -58062,13 +58206,46 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolP14accountCreatedyyAA11BankAccountVF",
-            "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolP14accountCreatedyyAA11BankAccountVF",
+            "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolPAAE14accountCreatedyyAA11BankAccountVF",
+            "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolPAAE14accountCreatedyyAA11BankAccountVF",
             "moduleName": "RazorpayTurboUPIUI",
             "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.CardDetailCallBackProtocol>",
             "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.CardDetailCallBackProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "vpaDetailsReceived",
+            "printedName": "vpaDetailsReceived(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RazorpayTurboUPIUI.VPADetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VPADetails",
+                    "printedName": "RazorpayTurboUPIUI.VPADetails",
+                    "usr": "s:18RazorpayTurboUPIUI10VPADetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolPAAE18vpaDetailsReceivedyySayAA10VPADetailsVGF",
+            "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolPAAE18vpaDetailsReceivedyySayAA10VPADetailsVGF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.CardDetailCallBackProtocol>",
+            "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.CardDetailCallBackProtocol>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -58076,8 +58253,8 @@
         "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolP",
         "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolP",
         "moduleName": "RazorpayTurboUPIUI",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
+        "genericSig": "<τ_0_0 : RazorpayTurboUPIUI.CardDetailAccountCallbackProtocol, τ_0_0 : RazorpayTurboUPIUI.CardDetailVPADetailsCallbackProtocol>",
+        "sugared_genericSig": "<Self : RazorpayTurboUPIUI.CardDetailAccountCallbackProtocol, Self : RazorpayTurboUPIUI.CardDetailVPADetailsCallbackProtocol>",
         "conformances": [
           {
             "kind": "Conformance",
@@ -58092,6 +58269,20 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailVPADetailsCallbackProtocol",
+            "printedName": "CardDetailVPADetailsCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailAccountCallbackProtocol",
+            "printedName": "CardDetailAccountCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP"
           }
         ]
       },
@@ -59446,6 +59637,68 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isVPALinked",
+            "printedName": "isVPALinked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RazorpayTurboUPIUI24CardDetailViewControllerC11isVPALinked33_FA7E58F8D3C3DE863F07036FC97AC2C0LLSbvp",
+            "mangledName": "$s18RazorpayTurboUPIUI24CardDetailViewControllerC11isVPALinked33_FA7E58F8D3C3DE863F07036FC97AC2C0LLSbvp",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 12,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "cardDetails",
+            "printedName": "cardDetails",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RazorpayTurboUPIUI.Card?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Card",
+                    "printedName": "RazorpayTurboUPIUI.Card",
+                    "usr": "s:18RazorpayTurboUPIUI4CardV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RazorpayTurboUPIUI24CardDetailViewControllerC11cardDetails33_FA7E58F8D3C3DE863F07036FC97AC2C0LLAA0D0VSgvp",
+            "mangledName": "$s18RazorpayTurboUPIUI24CardDetailViewControllerC11cardDetails33_FA7E58F8D3C3DE863F07036FC97AC2C0LLAA0D0VSgvp",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 13,
+            "hasStorage": true
+          },
+          {
             "kind": "Function",
             "name": "viewDidLoad",
             "printedName": "viewDidLoad()",
@@ -59661,6 +59914,28 @@
             "declKind": "Func",
             "usr": "s:18RazorpayTurboUPIUI24CardDetailViewControllerC16getDateComponent10Foundation0I10ComponentsVyF",
             "mangledName": "$s18RazorpayTurboUPIUI24CardDetailViewControllerC16getDateComponent10Foundation0I10ComponentsVyF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "proceedPINGeneration",
+            "printedName": "proceedPINGeneration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI24CardDetailViewControllerC20proceedPINGenerationyyF",
+            "mangledName": "$s18RazorpayTurboUPIUI24CardDetailViewControllerC20proceedPINGenerationyyF",
             "moduleName": "RazorpayTurboUPIUI",
             "isOpen": true,
             "declAttributes": [
@@ -60259,7 +60534,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "SetterAccess"
+              "SetterAccess",
+              "RawDocComment"
             ],
             "fixedbinaryorder": 0,
             "hasStorage": true,
@@ -60335,7 +60611,8 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
             "fixedbinaryorder": 1,
             "hasStorage": true,
@@ -61235,6 +61512,195 @@
           },
           {
             "kind": "Var",
+            "name": "linkVPASuccess",
+            "printedName": "linkVPASuccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvp",
+            "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvp",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvg",
+                "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvg",
+                "moduleName": "RazorpayTurboUPIUI",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvs",
+                "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvs",
+                "moduleName": "RazorpayTurboUPIUI",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvM",
+                "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC14linkVPASuccessyycSgvM",
+                "moduleName": "RazorpayTurboUPIUI",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vpaDetails",
+            "printedName": "vpaDetails",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RazorpayTurboUPIUI.VPADetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VPADetails",
+                    "printedName": "RazorpayTurboUPIUI.VPADetails",
+                    "usr": "s:18RazorpayTurboUPIUI10VPADetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC10vpaDetails33_3BDDAEB17112021C611BE4E152D92C19LLSayAA10VPADetailsVGvp",
+            "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC10vpaDetails33_3BDDAEB17112021C611BE4E152D92C19LLSayAA10VPADetailsVGvp",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 8,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
             "name": "alertMessage",
             "printedName": "alertMessage",
             "children": [
@@ -61260,9 +61726,10 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "RawDocComment"
             ],
-            "fixedbinaryorder": 7,
+            "fixedbinaryorder": 9,
             "hasStorage": true,
             "accessors": [
               {
@@ -61376,7 +61843,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 8,
+            "fixedbinaryorder": 10,
             "hasStorage": true,
             "accessors": [
               {
@@ -61490,7 +61957,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 9,
+            "fixedbinaryorder": 11,
             "hasStorage": true,
             "accessors": [
               {
@@ -61632,6 +62099,33 @@
           },
           {
             "kind": "Function",
+            "name": "getAllVpaList",
+            "printedName": "getAllVpaList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RazorpayTurboUPIUI.VPADetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VPADetails",
+                    "printedName": "RazorpayTurboUPIUI.VPADetails",
+                    "usr": "s:18RazorpayTurboUPIUI10VPADetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC13getAllVpaListSayAA10VPADetailsVGyF",
+            "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC13getAllVpaListSayAA10VPADetailsVGyF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setupPin",
             "printedName": "setupPin(_:_:)",
             "children": [
@@ -61686,6 +62180,30 @@
             "declKind": "Func",
             "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC8resetPinyyAA0D0V_AA11BankAccountVtF",
             "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC8resetPinyyAA0D0V_AA11BankAccountVtF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "linkVPA",
+            "printedName": "linkVPA(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BankAccount",
+                "printedName": "RazorpayTurboUPIUI.BankAccount",
+                "usr": "s:18RazorpayTurboUPIUI11BankAccountV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI19CardDetailViewModelC7linkVPAyyAA11BankAccountVF",
+            "mangledName": "$s18RazorpayTurboUPIUI19CardDetailViewModelC7linkVPAyyAA11BankAccountVF",
             "moduleName": "RazorpayTurboUPIUI",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -89295,6 +89813,55 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "gateway",
+            "printedName": "gateway",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RazorpayTurboUPIUI9ConstantsV7gatewaySSvpZ",
+            "mangledName": "$s18RazorpayTurboUPIUI9ConstantsV7gatewaySSvpZ",
+            "moduleName": "RazorpayTurboUPIUI",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RazorpayTurboUPIUI9ConstantsV7gatewaySSvgZ",
+                "mangledName": "$s18RazorpayTurboUPIUI9ConstantsV7gatewaySSvgZ",
+                "moduleName": "RazorpayTurboUPIUI",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "AXIS_UPI_COMMANDS",
             "printedName": "AXIS_UPI_COMMANDS",
@@ -103852,8 +104419,8 @@
           },
           {
             "kind": "Function",
-            "name": "accountCreated",
-            "printedName": "accountCreated(_:)",
+            "name": "vpaDetailsReceived",
+            "printedName": "vpaDetailsReceived(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -103862,14 +104429,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BankAccount",
-                "printedName": "RazorpayTurboUPIUI.BankAccount",
-                "usr": "s:18RazorpayTurboUPIUI11BankAccountV"
+                "name": "Array",
+                "printedName": "[RazorpayTurboUPIUI.VPADetails]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VPADetails",
+                    "printedName": "RazorpayTurboUPIUI.VPADetails",
+                    "usr": "s:18RazorpayTurboUPIUI10VPADetailsV"
+                  }
+                ],
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18RazorpayTurboUPIUI25BankAccountViewControllerC14accountCreatedyyAA0dE0VF",
-            "mangledName": "$s18RazorpayTurboUPIUI25BankAccountViewControllerC14accountCreatedyyAA0dE0VF",
+            "usr": "s:18RazorpayTurboUPIUI25BankAccountViewControllerC18vpaDetailsReceivedyySayAA10VPADetailsVGF",
+            "mangledName": "$s18RazorpayTurboUPIUI25BankAccountViewControllerC18vpaDetailsReceivedyySayAA10VPADetailsVGF",
             "moduleName": "RazorpayTurboUPIUI",
             "isOpen": true,
             "declAttributes": [
@@ -104247,6 +104822,20 @@
             "printedName": "CardDetailCallBackProtocol",
             "usr": "s:18RazorpayTurboUPIUI26CardDetailCallBackProtocolP",
             "mangledName": "$s18RazorpayTurboUPIUI26CardDetailCallBackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailAccountCallbackProtocol",
+            "printedName": "CardDetailAccountCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailVPADetailsCallbackProtocol",
+            "printedName": "CardDetailVPADetailsCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP"
           },
           {
             "kind": "Conformance",
@@ -133446,6 +134035,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "CardDetailAccountCallbackProtocol",
+            "printedName": "CardDetailAccountCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI33CardDetailAccountCallbackProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CardDetailVPADetailsCallbackProtocol",
+            "printedName": "CardDetailVPADetailsCallbackProtocol",
+            "usr": "s:18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP",
+            "mangledName": "$s18RazorpayTurboUPIUI36CardDetailVPADetailsCallbackProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Instantiable",
             "printedName": "Instantiable",
             "usr": "s:18RazorpayTurboUPIUI12InstantiableP",
@@ -143973,83 +144576,6 @@
           },
           {
             "kind": "Function",
-            "name": "getLinkedUpiAccounts",
-            "printedName": "getLinkedUpiAccounts(isFilter:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(RazorpayTurboUPIUI.TPVEnabledAccounts?, RazorpayTurboUPIUI.TurboSDKError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(RazorpayTurboUPIUI.TPVEnabledAccounts?, RazorpayTurboUPIUI.TurboSDKError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "RazorpayTurboUPIUI.TPVEnabledAccounts?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TPVEnabledAccounts",
-                            "printedName": "RazorpayTurboUPIUI.TPVEnabledAccounts",
-                            "usr": "s:18RazorpayTurboUPIUI18TPVEnabledAccountsV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "RazorpayTurboUPIUI.TurboSDKError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TurboSDKError",
-                            "printedName": "RazorpayTurboUPIUI.TurboSDKError",
-                            "usr": "s:18RazorpayTurboUPIUI0B8SDKErrorV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18RazorpayTurboUPIUI11TPVProtocolP20getLinkedUpiAccounts8isFilter_ySb_yAA010TPVEnabledH0VSg_AA0B8SDKErrorVSgtctF",
-            "mangledName": "$s18RazorpayTurboUPIUI11TPVProtocolP20getLinkedUpiAccounts8isFilter_ySb_yAA010TPVEnabledH0VSg_AA0B8SDKErrorVSgtctF",
-            "moduleName": "RazorpayTurboUPIUI",
-            "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.TPVProtocol>",
-            "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.TPVProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "linkNewUpiAccount",
             "printedName": "linkNewUpiAccount(amountInDisplayFormat:_:)",
             "children": [
@@ -144126,6 +144652,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : RazorpayTurboUPIUI.TPVProtocol>",
             "sugared_genericSig": "<Self where Self : RazorpayTurboUPIUI.TPVProtocol>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -145096,77 +145625,6 @@
             "declKind": "Func",
             "usr": "s:18RazorpayTurboUPIUI3TPVC17setTpvBankAccount03tpvgH0AA11TPVProtocol_pAA07TPVBankH0VSg_tF",
             "mangledName": "$s18RazorpayTurboUPIUI3TPVC17setTpvBankAccount03tpvgH0AA11TPVProtocol_pAA07TPVBankH0VSg_tF",
-            "moduleName": "RazorpayTurboUPIUI",
-            "isOpen": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLinkedUpiAccounts",
-            "printedName": "getLinkedUpiAccounts(isFilter:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(RazorpayTurboUPIUI.TPVEnabledAccounts?, RazorpayTurboUPIUI.TurboSDKError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(RazorpayTurboUPIUI.TPVEnabledAccounts?, RazorpayTurboUPIUI.TurboSDKError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "RazorpayTurboUPIUI.TPVEnabledAccounts?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TPVEnabledAccounts",
-                            "printedName": "RazorpayTurboUPIUI.TPVEnabledAccounts",
-                            "usr": "s:18RazorpayTurboUPIUI18TPVEnabledAccountsV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "RazorpayTurboUPIUI.TurboSDKError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TurboSDKError",
-                            "printedName": "RazorpayTurboUPIUI.TurboSDKError",
-                            "usr": "s:18RazorpayTurboUPIUI0B8SDKErrorV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18RazorpayTurboUPIUI3TPVC20getLinkedUpiAccounts8isFilter_ySb_yAA010TPVEnabledH0VSg_AA0B8SDKErrorVSgtctF",
-            "mangledName": "$s18RazorpayTurboUPIUI3TPVC20getLinkedUpiAccounts8isFilter_ySb_yAA010TPVEnabledH0VSg_AA0B8SDKErrorVSgtctF",
             "moduleName": "RazorpayTurboUPIUI",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -168147,6 +168605,69 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Function",
+            "name": "getIFSC",
+            "printedName": "getIFSC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI14TPVBankAccountV7getIFSCSSyF",
+            "mangledName": "$s18RazorpayTurboUPIUI14TPVBankAccountV7getIFSCSSyF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBankName",
+            "printedName": "getBankName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI14TPVBankAccountV11getBankNameSSyF",
+            "mangledName": "$s18RazorpayTurboUPIUI14TPVBankAccountV11getBankNameSSyF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bankIIN",
+            "printedName": "bankIIN()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RazorpayTurboUPIUI14TPVBankAccountV7bankIINSSyF",
+            "mangledName": "$s18RazorpayTurboUPIUI14TPVBankAccountV7bankIINSSyF",
+            "moduleName": "RazorpayTurboUPIUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -184910,21 +185431,21 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/RazorpayUpi.swift",
       "kind": "BooleanLiteral",
-      "offset": 25925,
+      "offset": 27595,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/RazorpayUpi.swift",
       "kind": "StringLiteral",
-      "offset": 33085,
+      "offset": 34755,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/RazorpayUpi.swift",
       "kind": "StringLiteral",
-      "offset": 33142,
+      "offset": 34812,
       "length": 2,
       "value": "\"\""
     },
@@ -186968,9 +187489,23 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/CardDetail\/CardDetailController\/CardDetailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 986,
+      "offset": 1377,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/CardDetail\/CardDetailController\/CardDetailViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1424,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/CardDetail\/ViewModel\/CardDetailViewModel.swift",
+      "kind": "Array",
+      "offset": 624,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Bank.swift",
@@ -187738,763 +188273,770 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1864,
+      "offset": 1816,
+      "length": 20,
+      "value": "\"p2m_upi_axis_olive\""
+    },
+    {
+      "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1910,
       "length": 17,
       "value": "\"GET_SIM_DETAILS\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1918,
+      "offset": 1964,
       "length": 16,
       "value": "\"GET_PERMISSION\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 2019,
       "length": 18,
       "value": "\"CHECK_PERMISSION\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2069,
+      "offset": 2115,
       "length": 4,
       "value": "\"91\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2155,
       "length": 5,
       "value": "\"401\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2147,
+      "offset": 2193,
       "length": 4,
       "value": "\"01\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2218,
+      "offset": 2264,
       "length": 5,
       "value": "\"U90\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2249,
+      "offset": 2295,
       "length": 5,
       "value": "\"U91\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2280,
+      "offset": 2326,
       "length": 5,
       "value": "\"U92\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2404,
       "length": 16,
       "value": "\"AXIS_SDK_CRASH\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2410,
+      "offset": 2456,
       "length": 15,
       "value": "\"USER_CANCELED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2464,
+      "offset": 2510,
       "length": 18,
       "value": "\"SIM_CARD_REMOVED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2524,
+      "offset": 2570,
       "length": 21,
       "value": "\"UNSUPPORTED_VERSION\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2581,
+      "offset": 2627,
       "length": 15,
       "value": "\"REQUEST_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 2678,
       "length": 15,
       "value": "\"UNKNOWN_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2690,
+      "offset": 2736,
       "length": 22,
       "value": "\"RESPONSE_PARSE_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2742,
+      "offset": 2788,
       "length": 16,
       "value": "\"AXIS_SDK_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2795,
+      "offset": 2841,
       "length": 16,
       "value": "\"SDK_INIT_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2855,
+      "offset": 2901,
       "length": 23,
       "value": "\"MERCHANT_KEY_MISMATCH\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
+      "offset": 2967,
       "length": 22,
       "value": "\"CUSTOMER_ID_MISMATCH\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2981,
+      "offset": 3027,
       "length": 17,
       "value": "\"HANDLE_MISMATCH\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3041,
+      "offset": 3087,
       "length": 7,
       "value": "\"12029\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3086,
+      "offset": 3132,
       "length": 17,
       "value": "\"INIT_NOT_CALLED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3153,
+      "offset": 3199,
       "length": 22,
       "value": "\"CREDENTIALS_MISMATCH\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3207,
+      "offset": 3253,
       "length": 11,
       "value": "\"EXCEPTION\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3254,
+      "offset": 3300,
       "length": 21,
       "value": "\"BALANCE_FETCH_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3308,
+      "offset": 3354,
       "length": 12,
       "value": "\"PERMISSION\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3365,
+      "offset": 3411,
       "length": 24,
       "value": "\"NO_BANK_ACCOUNT_LINKED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3428,
+      "offset": 3474,
       "length": 18,
       "value": "\"AXIS_SDK_TIMEOUT\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 3526,
       "length": 15,
       "value": "\"USER_CANCELED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3544,
+      "offset": 3590,
       "length": 28,
       "value": "\"INVALID_CUSTOMER_REFERENCE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3613,
+      "offset": 3659,
       "length": 20,
       "value": "\"PUBLIC_KEY_MISSING\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3675,
+      "offset": 3721,
       "length": 21,
       "value": "\"TOKEN_RETRY_FAILURE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3787,
       "length": 24,
       "value": "\"EMPTY_VPA_BANK_ACCOUNT\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3811,
+      "offset": 3857,
       "length": 25,
       "value": "\"ONBOARDING_TYPE_FAILURE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3924,
       "length": 21,
       "value": "\"TOKEN_TIMEOUT_ERROR\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3945,
+      "offset": 3991,
       "length": 25,
       "value": "\"INVALID_VERIFIED_NUMBER\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4011,
+      "offset": 4057,
       "length": 20,
       "value": "\"CUSTOMER_REFERENCE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4121,
       "length": 23,
       "value": "\"INVALID_MOBILE_NUMBER\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4147,
+      "offset": 4193,
       "length": 28,
       "value": "\"TPV_BANK_ACCOUNT_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4265,
       "length": 23,
       "value": "\"NO_TPV_ACCOUNT_LINKED\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4293,
+      "offset": 4339,
       "length": 30,
       "value": "\"ORDER_ID_IS_REQUIRED_FOR_TPV\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4356,
+      "offset": 4402,
       "length": 12,
       "value": "\"PUBLIC_KEY\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4410,
+      "offset": 4456,
       "length": 21,
       "value": "\"INVALID_TPV_REQUEST\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4511,
+      "offset": 4557,
       "length": 25,
       "value": "\"Crash in Axis Olive SDK\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4568,
+      "offset": 4614,
       "length": 11,
       "value": "\"Timed Out\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4619,
+      "offset": 4665,
       "length": 26,
       "value": "\"Flow aborted by the user\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4697,
+      "offset": 4743,
       "length": 61,
       "value": "\"SIM selection is not done. Please ask user to select a SIM.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4808,
+      "offset": 4854,
       "length": 73,
       "value": "\"This version of Razorpay UPI SDK is outdated and not supported anymore.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4920,
+      "offset": 4966,
       "length": 54,
       "value": "\"The registered SIM card was removed from the device.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5021,
+      "offset": 5067,
       "length": 52,
       "value": "\"Received invalid response. Please try again later.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5109,
+      "offset": 5155,
       "length": 35,
       "value": "\"VPA not allowed for this customer\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5184,
+      "offset": 5230,
       "length": 20,
       "value": "\"VPA already exist!\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5240,
+      "offset": 5286,
       "length": 45,
       "value": "\"Your session has expired.Please login again\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5321,
+      "offset": 5367,
       "length": 15,
       "value": "\"Invalid token\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5373,
+      "offset": 5419,
       "length": 23,
       "value": "\"Invalid amount value.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5426,
+      "offset": 5472,
       "length": 19,
       "value": "\"Unexpected error.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5482,
+      "offset": 5528,
       "length": 26,
       "value": "\"SDK Initialization error\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5552,
+      "offset": 5598,
       "length": 32,
       "value": "\"The key\/id passed and the one \""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5595,
+      "offset": 5641,
       "length": 36,
       "value": "\"used when registering are not same\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5674,
+      "offset": 5720,
       "length": 37,
       "value": "\"The customer id passed and the one \""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5722,
+      "offset": 5768,
       "length": 36,
       "value": "\"used when registering are not same\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5796,
+      "offset": 5842,
       "length": 35,
       "value": "\"The onHandled passed and the one \""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5842,
+      "offset": 5888,
       "length": 36,
       "value": "\"used when registering are not same\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5921,
+      "offset": 5967,
       "length": 25,
       "value": "\"No Internet connection!\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5984,
+      "offset": 6030,
       "length": 39,
       "value": "\"RazorpayUpi has not been initialized.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6081,
+      "offset": 6127,
       "length": 59,
       "value": "\"Credentials can't be changed once the user is registered.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6176,
+      "offset": 6222,
       "length": 36,
       "value": "\"Error in fetching account balance.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6245,
+      "offset": 6291,
       "length": 32,
       "value": "\"Required permission not given.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6319,
+      "offset": 6365,
       "length": 47,
       "value": "\"This feature is not available on this device.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6392,
+      "offset": 6438,
       "length": 29,
       "value": "\"REMITTER BANK HIGH RESPONSE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6447,
+      "offset": 6493,
       "length": 32,
       "value": "\"BENEFICIARY BANK HIGH RESPONSE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6505,
+      "offset": 6551,
       "length": 25,
       "value": "\"PAYER PSP NOT AVAILABLE\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6568,
+      "offset": 6614,
       "length": 66,
       "value": "\"Something went wrong. Please try again with another bank account\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6680,
+      "offset": 6726,
       "length": 57,
       "value": "\"We could not find any UPI account linked with your bank\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6783,
+      "offset": 6829,
       "length": 50,
       "value": "\"We couldn't verify your number. Please try again\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6870,
+      "offset": 6916,
       "length": 11,
       "value": "\"sdk_error\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6918,
+      "offset": 6964,
       "length": 16,
       "value": "\"unknown_source\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6969,
+      "offset": 7015,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7020,
+      "offset": 7066,
       "length": 24,
       "value": "\"Customer ID is missing\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7085,
+      "offset": 7131,
       "length": 23,
       "value": "\"Public key is missing\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7150,
+      "offset": 7196,
       "length": 64,
       "value": "\"Token retry failed. Make sure session delegate is implemented.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7259,
+      "offset": 7305,
       "length": 56,
       "value": "\"Something went wrong. Bank account does not have a VPA\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7361,
+      "offset": 7407,
       "length": 25,
       "value": "\"Unknown onboarding type\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7428,
+      "offset": 7474,
       "length": 43,
       "value": "\"Session token timed out. Please try again\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7512,
+      "offset": 7558,
       "length": 24,
       "value": "\"Customer ID is missing\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7580,
+      "offset": 7626,
       "length": 45,
       "value": "\"Invalid request. Mobile number is mandatory\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7674,
+      "offset": 7720,
       "length": 37,
       "value": "\"Account not found for the customer.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7755,
+      "offset": 7801,
       "length": 54,
       "value": "\"No TPV account linked with the customerId or orderId\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7870,
+      "offset": 7916,
       "length": 63,
       "value": "\"Invalid request. Bank account required along with customer id\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7994,
+      "offset": 8040,
       "length": 64,
       "value": "\" Invalid request. Customer id required along with Bank account\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8104,
+      "offset": 8150,
       "length": 47,
       "value": "\"No whitelisted account found for the customer\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8212,
+      "offset": 8258,
       "length": 63,
       "value": "\"Invalid request. Both order and bank account cannot be passed\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8326,
+      "offset": 8372,
       "length": 47,
       "value": "\"Invalid request. Order id is required for TPV\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8415,
+      "offset": 8461,
       "length": 56,
       "value": "\"This request is invalid. Please contact customer care.\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9158,
+      "offset": 9204,
       "length": 23,
       "value": "\"Public key is missing\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9240,
+      "offset": 9286,
       "length": 62,
       "value": "\"Invalid request. Both order and customer id cannot be passed\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9349,
+      "offset": 9395,
       "length": 46,
       "value": "\"Verified Number is Invalid. Please try again\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9506,
+      "offset": 9552,
       "length": 19,
       "value": "\"mobile_number_key\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9563,
+      "offset": 9609,
       "length": 17,
       "value": "\"is_device_bound\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9622,
+      "offset": 9668,
       "length": 21,
       "value": "\"bank_accounts_cache\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9690,
+      "offset": 9736,
       "length": 26,
       "value": "\"error_mapping_hash_value\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9759,
+      "offset": 9805,
       "length": 22,
       "value": "\"cached_error_mapping\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9817,
+      "offset": 9863,
       "length": 15,
       "value": "\"user_consents\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9870,
+      "offset": 9916,
       "length": 21,
       "value": "\"customer_ref_id_key\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9929,
+      "offset": 9975,
       "length": 22,
       "value": "\"user_onboarding_flow\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9984,
+      "offset": 10030,
       "length": 12,
       "value": "\"vpa_hanlde\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10041,
+      "offset": 10087,
       "length": 28,
       "value": "\"verified_mobile_number_key\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10100,
+      "offset": 10146,
       "length": 14,
       "value": "\"mcc_code_key\""
     },
@@ -190125,28 +190667,28 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/BankAccount\/ViewModel\/BankAccountViewModel.swift",
       "kind": "Array",
-      "offset": 256,
+      "offset": 255,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/BankAccount\/ViewModel\/BankAccountViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 439,
+      "offset": 438,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/BankAccount\/ViewModel\/BankAccountViewModel.swift",
       "kind": "Array",
-      "offset": 383,
+      "offset": 382,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/RazorpayUPI\/Screens\/Onboarding\/BankAccount\/ViewModel\/BankAccountViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 610,
+      "offset": 609,
       "length": 4,
       "value": "true"
     },
@@ -190440,112 +190982,112 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 2280,
+      "offset": 2284,
       "length": 11,
       "value": "\"bank_name\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 2321,
+      "offset": 2325,
       "length": 16,
       "value": "\"account_number\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 2920,
+      "offset": 3700,
       "length": 14,
       "value": "\"display_name\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 3848,
       "length": 14,
       "value": "\"X-PG-Service\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3372,
+      "offset": 4152,
       "length": 21,
       "value": "\"remove_rzp_branding\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3427,
+      "offset": 4207,
       "length": 31,
       "value": "\"supported_payer_account_types\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 4260,
       "length": 5,
       "value": "\"tpv\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3528,
+      "offset": 4308,
       "length": 23,
       "value": "\"prefetch_acc_disabled\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3590,
+      "offset": 4370,
       "length": 26,
       "value": "\"customer_rewards_enabled\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 3744,
+      "offset": 4524,
       "length": 19,
       "value": "\"olive_sdk_timeout\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4158,
+      "offset": 4938,
       "length": 7,
       "value": "\"banks\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4196,
+      "offset": 4976,
       "length": 17,
       "value": "\"consent_message\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4240,
+      "offset": 5020,
       "length": 13,
       "value": "\"fetch_retry\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4285,
+      "offset": 5065,
       "length": 18,
       "value": "\"fetch_concurrent\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4332,
+      "offset": 5112,
       "length": 15,
       "value": "\"fetch_timeout\""
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/upi-in-app-ios\/RazorpayUPI\/Models\/SDKPreference.swift",
       "kind": "StringLiteral",
-      "offset": 4380,
+      "offset": 5160,
       "length": 20,
       "value": "\"account_link_limit\""
     },

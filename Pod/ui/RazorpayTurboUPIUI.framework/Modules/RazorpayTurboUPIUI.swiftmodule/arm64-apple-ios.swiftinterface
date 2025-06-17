@@ -762,7 +762,6 @@ public protocol TPVProtocol : AnyObject {
   func setCustomerId(customerId: Swift.String?) -> any RazorpayTurboUPIUI.TPVProtocol
   func setMobileNumber(mobile: Swift.String?) -> any RazorpayTurboUPIUI.TPVProtocol
   func setTpvBankAccount(tpvBankAccount: RazorpayTurboUPIUI.TPVBankAccount?) -> any RazorpayTurboUPIUI.TPVProtocol
-  func getLinkedUpiAccounts(isFilter: Swift.Bool, _ handler: @escaping RazorpayTurboUPIUI.CallBack<RazorpayTurboUPIUI.TPVEnabledAccounts>)
   func linkNewUpiAccount(amountInDisplayFormat: Swift.String?, _ handler: @escaping RazorpayTurboUPIUI.CallBack<Any>)
   func linkNewUpiAccount(payRequest: RazorpayTurboUPIUI.PayRequest, _ handler: @escaping RazorpayTurboUPIUI.moneyHandler)
   func tpvUseCasesValidation() -> Swift.Result<RazorpayTurboUPIUI.TPVValidCase, RazorpayTurboUPIUI.TurboSDKError>
@@ -806,6 +805,9 @@ public struct TPVBankAccount : Swift.Codable {
   public var accountNumber: Swift.String
   public var bankLogo: Swift.String?
   public init(ifsc: Swift.String, bankName: Swift.String? = nil, accountNumber: Swift.String, bankLogo: Swift.String? = nil)
+  public func getIFSC() -> Swift.String
+  public func getBankName() -> Swift.String
+  public func bankIIN() -> Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

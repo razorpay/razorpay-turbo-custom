@@ -8480,95 +8480,6 @@
           },
           {
             "kind": "Var",
-            "name": "isUpiTPVSdkInitilised",
-            "printedName": "isUpiTPVSdkInitilised",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvp",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvp",
-            "moduleName": "TurboUpiPluginUI",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvg",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvg",
-                "moduleName": "TurboUpiPluginUI",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvs",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvs",
-                "moduleName": "TurboUpiPluginUI",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvM",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC02isB16TPVSdkInitilisedSbvM",
-                "moduleName": "TurboUpiPluginUI",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "orderId",
             "printedName": "orderId",
             "children": [
@@ -9055,6 +8966,9 @@
             "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC14routeNextStateyyF",
             "moduleName": "TurboUpiPluginUI",
             "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -9131,8 +9045,8 @@
           },
           {
             "kind": "Function",
-            "name": "initilizeTurboUpiSDK",
-            "printedName": "initilizeTurboUpiSDK(completionHandler:)",
+            "name": "initializeTurboUpiSDK",
+            "printedName": "initializeTurboUpiSDK(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9180,8 +9094,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC09initilizeaB3SDK17completionHandleryySb_AA0A5ErrorCSgtc_tFZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC09initilizeaB3SDK17completionHandleryySb_AA0A5ErrorCSgtc_tFZ",
+            "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC010initializeaB3SDK17completionHandleryySb_AA0A5ErrorCSgtc_tFZ",
+            "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC010initializeaB3SDK17completionHandleryySb_AA0A5ErrorCSgtc_tFZ",
             "moduleName": "TurboUpiPluginUI",
             "static": true,
             "declAttributes": [
@@ -9290,8 +9204,8 @@
           },
           {
             "kind": "Function",
-            "name": "initilizeBankSDKAndDispatchUpiAccounts",
-            "printedName": "initilizeBankSDKAndDispatchUpiAccounts(_:)",
+            "name": "initializeBankSDKAndDispatchUpiAccounts",
+            "printedName": "initializeBankSDKAndDispatchUpiAccounts(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9306,8 +9220,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC027initilizeBankSDKAndDispatchB8AccountsyyAA0A14TPVBankAccountCF",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC027initilizeBankSDKAndDispatchB8AccountsyyAA0A14TPVBankAccountCF",
+            "usr": "s:16TurboUpiPluginUI08RazorpayA3TPVC028initializeBankSDKAndDispatchB8AccountsyyAA0A14TPVBankAccountCF",
+            "mangledName": "$s16TurboUpiPluginUI08RazorpayA3TPVC028initializeBankSDKAndDispatchB8AccountsyyAA0A14TPVBankAccountCF",
             "moduleName": "TurboUpiPluginUI",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -9919,7 +9833,8 @@
             "moduleName": "TurboUpiPluginUI",
             "static": true,
             "declAttributes": [
-              "Final"
+              "Final",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9966,7 +9881,8 @@
             "moduleName": "TurboUpiPluginUI",
             "static": true,
             "declAttributes": [
-              "Final"
+              "Final",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -29057,738 +28973,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "mobileNumber",
-            "printedName": "mobileNumber",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC12mobileNumberSSSgvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "orderId",
-            "printedName": "orderId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC7orderIdSSSgvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "customerId",
-            "printedName": "customerId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC10customerIdSSSgvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "color",
-            "printedName": "color",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC5colorSSSgvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tpaBankAccount",
-            "printedName": "tpaBankAccount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TurboUpiPluginUI.TurboTPVBankAccount?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TurboTPVBankAccount",
-                    "printedName": "TurboUpiPluginUI.TurboTPVBankAccount",
-                    "usr": "c:@M@TurboUpiPluginUI@objc(cs)TurboTPVBankAccount"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TurboUpiPluginUI.TurboTPVBankAccount?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TurboTPVBankAccount",
-                        "printedName": "TurboUpiPluginUI.TurboTPVBankAccount",
-                        "usr": "c:@M@TurboUpiPluginUI@objc(cs)TurboTPVBankAccount"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TurboUpiPluginUI.TurboTPVBankAccount?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TurboTPVBankAccount",
-                        "printedName": "TurboUpiPluginUI.TurboTPVBankAccount",
-                        "usr": "c:@M@TurboUpiPluginUI@objc(cs)TurboTPVBankAccount"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC14tpaBankAccountAA0a7TPVBankJ0CSgvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isSDKInitialised",
-            "printedName": "isSDKInitialised",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvpZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvpZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvgZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvgZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvsZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvsZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvMZ",
-                "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC16isSDKInitialisedSbvMZ",
-                "moduleName": "TurboUpiPluginUI",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "configureTPVEnvironmentWith",
             "printedName": "configureTPVEnvironmentWith(mobileNumber:orderId:customerId:color:tpvBankAccount:)",
@@ -29954,88 +29138,6 @@
             "declKind": "Func",
             "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC07linkNewB7Account5color17completionHandlerySS_ySayAA0bJ0CGSg_AA0A5ErrorCSgtctFZ",
             "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC07linkNewB7Account5color17completionHandlerySS_ySayAA0bJ0CGSg_AA0A5ErrorCSgtctFZ",
-            "moduleName": "TurboUpiPluginUI",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "internalLinkNewTPVAccount",
-            "printedName": "internalLinkNewTPVAccount(color:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "([TurboUpiPluginUI.UpiAccount]?, TurboUpiPluginUI.TurboError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "([TurboUpiPluginUI.UpiAccount]?, TurboUpiPluginUI.TurboError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "[TurboUpiPluginUI.UpiAccount]?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[TurboUpiPluginUI.UpiAccount]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "UpiAccount",
-                                "printedName": "TurboUpiPluginUI.UpiAccount",
-                                "usr": "c:@M@TurboUpiPluginUI@objc(cs)UpiAccount"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "TurboUpiPluginUI.TurboError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TurboError",
-                            "printedName": "TurboUpiPluginUI.TurboError",
-                            "usr": "c:@M@TurboUpiPluginUI@objc(cs)TurboError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC25internalLinkNewTPVAccount5color17completionHandlerySS_ySayAA0B7AccountCGSg_AA0A5ErrorCSgtctFZ",
-            "mangledName": "$s16TurboUpiPluginUI08RazorpayA12TpvUIHandlerC25internalLinkNewTPVAccount5color17completionHandlerySS_ySayAA0B7AccountCGSg_AA0A5ErrorCSgtctFZ",
             "moduleName": "TurboUpiPluginUI",
             "static": true,
             "declAttributes": [
@@ -34266,21 +33368,21 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 9607,
+      "offset": 9260,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurboTPV.swift",
       "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurboTPV.swift",
       "kind": "StringLiteral",
-      "offset": 566,
+      "offset": 575,
       "length": 2,
       "value": "\"\""
     },
@@ -34518,7 +33620,7 @@
     {
       "filePath": "\/Users\/justin.joseph\/Documents\/RZPOrg\/Mobile\/iOS\/Projects\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurboTPVUIHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 599,
+      "offset": 647,
       "length": 5,
       "value": "false"
     },
