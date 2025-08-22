@@ -54,4 +54,14 @@ Pod::Spec.new do |s|
     ui.dependency 'razorpay-turbo-custom/Core'
     ui.dependency 'razorpay-customui-pod'
   end
+
+  s.subspec 'autopay-ui' do |autopay-ui| 
+    ui.vendored_frameworks = [
+      'Pod/ui/RazorpayTurboUPIUI.framework',
+      'Pod/ui/TurboUpiPluginUI.framework'
+      'Pod/ui/autopay/AutopayUI.framework'
+    ]
+    ui.dependency 'razorpay-turbo-custom/Core'
+    ui.dependency 'razorpay-customui-pod'
+  end
 end
