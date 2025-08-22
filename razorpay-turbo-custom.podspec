@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author           = { 'ramprasadAnand' => 'ramprasad.a@razorpay.com' }
   s.source           = { :git => 'https://github.com/razorpay/razorpay-turbo-custom.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
 
   s.subspec 'Core' do |core| 
@@ -55,13 +55,13 @@ Pod::Spec.new do |s|
     ui.dependency 'razorpay-customui-pod'
   end
 
-  s.subspec 'autopay-ui' do |autopay-ui| 
-    ui.vendored_frameworks = [
+  s.subspec 'autopay-ui' do |autopay_ui| 
+    autopay_ui.vendored_frameworks = [
       'Pod/ui/RazorpayTurboUPIUI.framework',
-      'Pod/ui/TurboUpiPluginUI.framework'
+      'Pod/ui/TurboUpiPluginUI.framework',
       'Pod/ui/autopay/AutopayUI.framework'
     ]
-    ui.dependency 'razorpay-turbo-custom/Core'
-    ui.dependency 'razorpay-customui-pod'
+    autopay_ui.dependency 'razorpay-turbo-custom/Core'
+    autopay_ui.dependency 'razorpay-customui-pod'
   end
 end
