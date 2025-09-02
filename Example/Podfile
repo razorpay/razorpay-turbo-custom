@@ -1,13 +1,7 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'razorpay-turbo-ui-pod_Example' do
-  pod 'razorpay-turbo-ui-pod', :path => '../'
-
-  target 'razorpay-turbo-ui-pod_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'razorpay-turbo-custom/autopay-ui', :git => 'https://github.com/razorpay/razorpay-turbo-custom.git', :branch => 'feat/turbo-autopay-ui'
 end

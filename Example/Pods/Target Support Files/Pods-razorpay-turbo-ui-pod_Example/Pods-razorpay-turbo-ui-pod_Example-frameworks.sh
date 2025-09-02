@@ -176,10 +176,22 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/razorpay-turbo-ui-pod/razorpay_turbo_ui_pod.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/CommonLibrary.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/Sentry.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/two_party.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/RazorpayTurboUPIUI.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/TurboUpiPluginUI.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/autopay/AutopayUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/Razorpay.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/razorpay-turbo-ui-pod/razorpay_turbo_ui_pod.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/CommonLibrary.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/Sentry.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/core/two_party.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/RazorpayTurboUPIUI.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/TurboUpiPluginUI.framework"
+  install_framework "${PODS_ROOT}/razorpay-turbo-custom/Pod/ui/autopay/AutopayUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/Razorpay.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
