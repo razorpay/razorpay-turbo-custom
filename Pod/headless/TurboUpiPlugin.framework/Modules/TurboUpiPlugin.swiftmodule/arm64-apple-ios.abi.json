@@ -24470,908 +24470,6 @@
         "moduleName": "TurboUpiPlugin"
       },
       {
-        "kind": "Import",
-        "name": "RazorpayTurboUPI",
-        "printedName": "RazorpayTurboUPI",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TurboTPVPluginEntity",
-        "printedName": "TurboTPVPluginEntity",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "orderId",
-            "printedName": "orderId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "mobile",
-            "printedName": "mobile",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "customerId",
-            "printedName": "customerId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tpvBankAccount",
-            "printedName": "tpvBankAccount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TurboUpiPlugin.TPVBankAccount?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TPVBankAccount",
-                    "printedName": "TurboUpiPlugin.TPVBankAccount",
-                    "usr": "c:@M@TurboUpiPlugin@objc(cs)TPVBankAccount"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 3,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TurboUpiPlugin.TPVBankAccount?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TPVBankAccount",
-                        "printedName": "TurboUpiPlugin.TPVBankAccount",
-                        "usr": "c:@M@TurboUpiPlugin@objc(cs)TPVBankAccount"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "setOrderId",
-            "printedName": "setOrderId(orderId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setOrderIdWithOrderId:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCustomerId",
-            "printedName": "setCustomerId(customerId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setCustomerIdWithCustomerId:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setMobileNumber",
-            "printedName": "setMobileNumber(mobile:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setMobileNumberWithMobile:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setTpvBankAccount",
-            "printedName": "setTpvBankAccount(tpvBankAccount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC17setTpvBankAccount03tpvhI08Razorpay08UPITurboD0_pyp_tF",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC17setTpvBankAccount03tpvhI08Razorpay08UPITurboD0_pyp_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setTpvBankAccountWithTpvBankAccount:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "linkNewUpiAccount",
-            "printedName": "linkNewUpiAccount(linkActionDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC07linkNewB7Account0F14ActionDelegateyyp_tF",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC07linkNewB7Account0F14ActionDelegateyyp_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "linkNewUpiAccountWithLinkActionDelegate:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TurboTPVPluginEntity",
-                "printedName": "TurboUpiPlugin.TurboTPVPluginEntity",
-                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityCACycfc",
-            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityCACycfc",
-            "moduleName": "TurboUpiPlugin",
-            "implicit": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC",
-        "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC",
-        "moduleName": "TurboUpiPlugin",
-        "isOpen": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UPITurboTPVPlugin",
-            "printedName": "UPITurboTPVPlugin",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin",
-            "mangledName": "$s8Razorpay17UPITurboTPVPluginP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TurboTPVUIPluginEntity",
-        "printedName": "TurboTPVUIPluginEntity",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "orderId",
-            "printedName": "orderId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "mobile",
-            "printedName": "mobile",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "customerId",
-            "printedName": "customerId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvp",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvp",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvg",
-                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvg",
-                "moduleName": "TurboUpiPlugin",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "setOrderId",
-            "printedName": "setOrderId(orderId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVUIPlugin",
-                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setOrderIdWithOrderId:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCustomerId",
-            "printedName": "setCustomerId(customerId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVUIPlugin",
-                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setCustomerIdWithCustomerId:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setMobileNumber",
-            "printedName": "setMobileNumber(mobile:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UPITurboTPVUIPlugin",
-                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "setMobileNumberWithMobile:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "linkNewUpiAccountWithUI",
-            "printedName": "linkNewUpiAccountWithUI(amountInDisplayFormat:color:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Any?, Any?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Any?, Any?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Any?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Any?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC07linkNewB13AccountWithUI21amountInDisplayFormat5color17completionHandlerySS_SSyypSg_AHtctF",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC07linkNewB13AccountWithUI21amountInDisplayFormat5color17completionHandlerySS_SSyypSg_AHtctF",
-            "moduleName": "TurboUpiPlugin",
-            "isOpen": true,
-            "objc_name": "linkNewUpiAccountWithUIWithAmountInDisplayFormat:color:completionHandler:",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TurboTPVUIPluginEntity",
-                "printedName": "TurboUpiPlugin.TurboTPVUIPluginEntity",
-                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityCACycfc",
-            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityCACycfc",
-            "moduleName": "TurboUpiPlugin",
-            "implicit": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC",
-        "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC",
-        "moduleName": "TurboUpiPlugin",
-        "isOpen": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UPITurboTPVUIPlugin",
-            "printedName": "UPITurboTPVUIPlugin",
-            "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin",
-            "mangledName": "$s8Razorpay19UPITurboTPVUIPluginP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Razorpay",
-        "printedName": "Razorpay",
-        "declKind": "Import",
-        "moduleName": "TurboUpiPlugin"
-      },
-      {
         "kind": "TypeDecl",
         "name": "RZPTurboUPI",
         "printedName": "RZPTurboUPI",
@@ -29772,6 +28870,908 @@
             "printedName": "PluginPaymentDelegate",
             "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate",
             "mangledName": "$s8Razorpay21PluginPaymentDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Razorpay",
+        "printedName": "Razorpay",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayTurboUPI",
+        "printedName": "RazorpayTurboUPI",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TurboTPVPluginEntity",
+        "printedName": "TurboTPVPluginEntity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderId",
+            "printedName": "orderId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC7orderIdSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mobile",
+            "printedName": "mobile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC6mobileSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customerId",
+            "printedName": "customerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10customerIdSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tpvBankAccount",
+            "printedName": "tpvBankAccount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TurboUpiPlugin.TPVBankAccount?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TPVBankAccount",
+                    "printedName": "TurboUpiPlugin.TPVBankAccount",
+                    "usr": "c:@M@TurboUpiPlugin@objc(cs)TPVBankAccount"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TurboUpiPlugin.TPVBankAccount?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TPVBankAccount",
+                        "printedName": "TurboUpiPlugin.TPVBankAccount",
+                        "usr": "c:@M@TurboUpiPlugin@objc(cs)TPVBankAccount"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC14tpvBankAccountAA07TPVBankH0CSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setOrderId",
+            "printedName": "setOrderId(orderId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVPlugin",
+                "printedName": "any Razorpay.UPITurboTPVPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setOrderIdWithOrderId:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomerId",
+            "printedName": "setCustomerId(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVPlugin",
+                "printedName": "any Razorpay.UPITurboTPVPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setCustomerIdWithCustomerId:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMobileNumber",
+            "printedName": "setMobileNumber(mobile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVPlugin",
+                "printedName": "any Razorpay.UPITurboTPVPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setMobileNumberWithMobile:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTpvBankAccount",
+            "printedName": "setTpvBankAccount(tpvBankAccount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVPlugin",
+                "printedName": "any Razorpay.UPITurboTPVPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC17setTpvBankAccount03tpvhI08Razorpay08UPITurboD0_pyp_tF",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC17setTpvBankAccount03tpvhI08Razorpay08UPITurboD0_pyp_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setTpvBankAccountWithTpvBankAccount:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "linkNewUpiAccount",
+            "printedName": "linkNewUpiAccount(linkActionDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC07linkNewB7Account0F14ActionDelegateyyp_tF",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC07linkNewB7Account0F14ActionDelegateyyp_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "linkNewUpiAccountWithLinkActionDelegate:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TurboTPVPluginEntity",
+                "printedName": "TurboUpiPlugin.TurboTPVPluginEntity",
+                "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityCACycfc",
+            "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityCACycfc",
+            "moduleName": "TurboUpiPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14TurboUpiPlugin0A15TPVPluginEntityC",
+        "mangledName": "$s14TurboUpiPlugin0A15TPVPluginEntityC",
+        "moduleName": "TurboUpiPlugin",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UPITurboTPVPlugin",
+            "printedName": "UPITurboTPVPlugin",
+            "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin",
+            "mangledName": "$s8Razorpay17UPITurboTPVPluginP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TurboTPVUIPluginEntity",
+        "printedName": "TurboTPVUIPluginEntity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderId",
+            "printedName": "orderId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC7orderIdSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mobile",
+            "printedName": "mobile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC6mobileSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customerId",
+            "printedName": "customerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvp",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvp",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvg",
+                "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10customerIdSSSgvg",
+                "moduleName": "TurboUpiPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setOrderId",
+            "printedName": "setOrderId(orderId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVUIPlugin",
+                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC10setOrderId05orderH08Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setOrderIdWithOrderId:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomerId",
+            "printedName": "setCustomerId(customerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVUIPlugin",
+                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC13setCustomerId08customerH08Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setCustomerIdWithCustomerId:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMobileNumber",
+            "printedName": "setMobileNumber(mobile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UPITurboTPVUIPlugin",
+                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
+                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC15setMobileNumber6mobile8Razorpay08UPITurboD0_pSS_tF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "setMobileNumberWithMobile:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "linkNewUpiAccountWithUI",
+            "printedName": "linkNewUpiAccountWithUI(amountInDisplayFormat:color:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?, Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any?, Any?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC07linkNewB13AccountWithUI21amountInDisplayFormat5color17completionHandlerySS_SSyypSg_AHtctF",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC07linkNewB13AccountWithUI21amountInDisplayFormat5color17completionHandlerySS_SSyypSg_AHtctF",
+            "moduleName": "TurboUpiPlugin",
+            "isOpen": true,
+            "objc_name": "linkNewUpiAccountWithUIWithAmountInDisplayFormat:color:completionHandler:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TurboTPVUIPluginEntity",
+                "printedName": "TurboUpiPlugin.TurboTPVUIPluginEntity",
+                "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityCACycfc",
+            "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityCACycfc",
+            "moduleName": "TurboUpiPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14TurboUpiPlugin0A17TPVUIPluginEntityC",
+        "mangledName": "$s14TurboUpiPlugin0A17TPVUIPluginEntityC",
+        "moduleName": "TurboUpiPlugin",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UPITurboTPVUIPlugin",
+            "printedName": "UPITurboTPVUIPlugin",
+            "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin",
+            "mangledName": "$s8Razorpay19UPITurboTPVUIPluginP"
           }
         ]
       },
