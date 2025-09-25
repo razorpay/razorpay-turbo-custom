@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-turbo-custom'
-  s.version          = '2.0.3'
+  s.version          = "2.0.4"
   s.summary          = "CocoaPod implementation of Razorpay's Turbo in-app UPI Payments"
 
   s.description      = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/razorpay/razorpay-turbo-custom'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ramprasadAnand' => 'ramprasad.a@razorpay.com' }
-  s.source           = { :git => 'https://github.com/razorpay/razorpay-turbo-custom.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/razorpay/razorpay-turbo-custom.git', :tag => "2.0.4" }
 
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'

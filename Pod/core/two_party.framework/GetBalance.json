@@ -1,0 +1,12 @@
+{
+  "entity": "upi.fundsource.balance",
+  "fundsource_id": "string",
+  "currency": "string",
+  "amount": "80000",
+  "customer_reference": "MNDbX4s",
+  "upi_transaction_id": "TxnXYZABC9",
+  "vpa": "string",
+  "masked_account_number": "XXXXXXXXX5678",
+  "upi_iin": "34PQR987",
+  "outstanding_amount": "15000"
+}
