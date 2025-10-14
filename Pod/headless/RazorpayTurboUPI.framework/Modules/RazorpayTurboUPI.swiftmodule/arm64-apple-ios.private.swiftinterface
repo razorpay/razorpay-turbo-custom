@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RazorpayTurboUPI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import CoreTelephony
 import CryptoKit
@@ -35,7 +35,9 @@ public struct TurboConsent : Swift.Codable {
 }
 public enum ConsentType : Swift.String, Swift.Codable {
   case prefetchAndLink
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -48,7 +50,9 @@ public enum BeneficiaryType : Swift.String, Swift.Codable {
   case all
   case vpa
   case account
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -78,9 +82,14 @@ public struct TurboSDKError {
   public var localizedDescription: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var asDictionary: [Swift.String : Any?] {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(errorCode: Swift.String, errorDescription: Swift.String, errorReason: Swift.String? = nil, errorSource: Swift.String? = nil, errorStep: Swift.String? = nil, subCode: Swift.String? = nil, sdkErrorCode: Swift.String? = nil, sdkErrorDescription: Swift.String? = nil, error: (any Swift.Error)? = nil, isExternal: Swift.Bool, internalErrroCode: Swift.String = "", internalErrorDescription: Swift.String = "")
+  #endif
 }
 extension RazorpayTurboUPI.TurboSDKError : Swift.Error {
 }
@@ -107,12 +116,20 @@ public class IOSSecuritySuite {
 @available(iOSApplicationExtension, unavailable)
 extension RazorpayTurboUPI.IOSSecuritySuite {
   public static func amIMSHooked(_ functionAddress: Swift.UnsafeMutableRawPointer) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func denyMSHook(_ functionAddress: Swift.UnsafeMutableRawPointer) -> Swift.UnsafeMutableRawPointer?
+  #endif
   public static func denySymbolHook(_ symbol: Swift.String)
   public static func denySymbolHook(_ symbol: Swift.String, at image: Swift.UnsafePointer<MachO.mach_header>, imageSlide slide: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getMachOFileHashValue(_ target: RazorpayTurboUPI.IntegrityCheckerImageTarget = .default) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func findLoadedDylibs(_ target: RazorpayTurboUPI.IntegrityCheckerImageTarget = .default) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func hasBreakpointAt(_ functionAddr: Swift.UnsafeRawPointer, functionSize: Darwin.vm_size_t?) -> Swift.Bool
+  #endif
   public static func hasWatchpoint() -> Swift.Bool
 }
 public typealias FailedCheckType = (check: RazorpayTurboUPI.FailedCheck, failMessage: Swift.String)
@@ -152,10 +169,154 @@ public enum IntegrityCheckerImageTarget {
   case `default`
   case custom(Swift.String)
 }
+@_hasMissingDesignatedInitializers public class CreateMandateRequestModelWrapper {
+  final public let amount: Swift.Int
+  final public let amountRule: Swift.String
+  final public let name: Swift.String
+  final public let description: Swift.String
+  final public let expireAt: Swift.Int
+  final public let blockFund: Swift.Bool
+  final public let revocableByPayer: Swift.Bool
+  final public let recurrence: RazorpayTurboUPI.TurboAutopayMandateRecurrenceInfo
+  final public let validity: RazorpayTurboUPI.TurboAutopayTimeRange
+  final public let upiReferenceCategory: Swift.String
+  final public let upiReferenceURL: Swift.String
+  public init(amount: Swift.Int, amountRule: Swift.String, name: Swift.String, description: Swift.String, expireAt: Swift.Int, blockFund: Swift.Bool, revocableByPayer: Swift.Bool, recurrence: RazorpayTurboUPI.TurboAutopayMandateRecurrenceInfo, validity: RazorpayTurboUPI.TurboAutopayTimeRange, upiReferenceCategory: Swift.String, upiReferenceURL: Swift.String)
+  convenience public init(from json: [Swift.String : Any]) throws
+  @objc deinit
+}
 public class DeregisterAccountAPI {
   public init()
   public func deregisterAccount(_ handler: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
   @objc deinit
+}
+public struct TurboAutopayMandateEntity {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(umn: Swift.String, amount: Swift.Int, amountRule: Swift.String, payer: RazorpayTurboUPI.TurboAutopayPayer, payee: RazorpayTurboUPI.TurboAutopayPayee, name: Swift.String, expireAt: Swift.Int, blockFund: Swift.Bool, revocableByPayer: Swift.Bool, recurrence: RazorpayTurboUPI.TurboAutopayMandateRecurrenceInfo, validity: RazorpayTurboUPI.TurboAutopayTimeRange, upiReferenceCategory: Swift.String, upiReferenceUrl: Swift.String, description: Swift.String?, status: Swift.String, createdAt: Swift.Int, pause: RazorpayTurboUPI.TurboAutopayTimeRange?, upiTransactionId: Swift.String?, referenceId: Swift.String?)
+  #endif
+  public let umn: Swift.String
+  public let amount: Swift.Int
+  public let amountRule: Swift.String
+  public let amountRuleEnum: RazorpayTurboUPI.TurboAmountRule
+  public let payer: RazorpayTurboUPI.TurboAutopayPayer
+  public let payee: RazorpayTurboUPI.TurboAutopayPayee
+  public let name: Swift.String
+  public let expireAt: Swift.Int
+  public let blockFund: Swift.Bool
+  public let revocableByPayer: Swift.Bool
+  public let recurrence: RazorpayTurboUPI.TurboAutopayMandateRecurrenceInfo
+  public let validity: RazorpayTurboUPI.TurboAutopayTimeRange
+  public let upiReferenceCategory: Swift.String
+  public let upiReferenceUrl: Swift.String
+  public let description: Swift.String?
+  public let status: Swift.String
+  public let statusEnum: RazorpayTurboUPI.TurboMandateStatus
+  public let createdAt: Swift.Int
+  public let pause: RazorpayTurboUPI.TurboAutopayTimeRange?
+  public let upiTransactionId: Swift.String?
+  public let referenceId: Swift.String?
+}
+extension RazorpayTurboUPI.TurboAutopayMandateEntity {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func copy(payer: RazorpayTurboUPI.TurboAutopayPayer? = nil, payee: RazorpayTurboUPI.TurboAutopayPayee? = nil) -> RazorpayTurboUPI.TurboAutopayMandateEntity
+  #endif
+}
+public struct TurboAutopayTimeRange {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(startAt: Swift.Int?, endAt: Swift.Int?)
+  #endif
+  public let startAt: Swift.Int?
+  public let endAt: Swift.Int?
+}
+public struct TurboAutopayMandateRecurrenceInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(period: Swift.String?, rule: Swift.String?, value: Swift.Int?)
+  #endif
+  public let period: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var periodEnum: RazorpayTurboUPI.TurboMandateRecurrencePeriod? {
+    get
+  }
+  #endif
+  public let rule: Swift.String?
+  public let value: Swift.Int?
+}
+public struct TurboAutopayPayer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(vpa: Swift.String?, bankAccount: RazorpayTurboUPI.VPADetails? = nil, name: Swift.String?)
+  #endif
+  public let vpa: Swift.String?
+  public let name: Swift.String?
+  public let bankAccount: RazorpayTurboUPI.VPADetails?
+}
+public struct TurboAutopayPayee {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(vpa: Swift.String? = nil, name: Swift.String? = nil, mcc: Swift.String? = nil, vpaDetails: RazorpayTurboUPI.VPADetails? = nil)
+  #endif
+  public let vpa: Swift.String?
+  public let name: Swift.String?
+  public let mcc: Swift.String?
+  public let vpaDetails: RazorpayTurboUPI.VPADetails?
+}
+public enum TurboMandateStatus : Swift.String {
+  case initiated
+  case created
+  case active
+  case completed
+  case paused
+  case failed
+  case unspecified
+  public var description: Swift.String {
+    get
+  }
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TurboAmountRule : Swift.String {
+  case exact
+  case max
+  case unspecified
+  public var description: Swift.String {
+    get
+  }
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TurboMandateRecurrencePeriod : Swift.String {
+  case onetime
+  case daily
+  case weekly
+  case fortnightly
+  case monthly
+  case quarterly
+  case halfyearly
+  case yearly
+  case aspresented
+  case unspecified
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var numberOfDays: Swift.Int? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct Card {
   public let expiryMonth: Swift.String
@@ -167,17 +328,23 @@ extension Swift.Decodable {
   public init(from: Any) throws
 }
 extension Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func toJSONString() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionary: [Swift.String : Any]? {
     get
   }
+  #endif
 }
 extension os.OSLog {
   public static let defaultLogCatory: os.OSLog
 }
 public func printLog(_ items: Any..., log: os.OSLog = .defaultLogCatory, type: os.OSLogType = .debug, fileName: Swift.String = #file, functionName: Swift.String = #function, line: Swift.Int = #line)
 public protocol TokenProvider3p {
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetchToken(completion: @escaping (RazorpayTurboUPI.SessionData?) -> Swift.Void)
+  #endif
 }
 public typealias RazorpayTokenProvider = RazorpayTurboUPI.TokenProvider3p
 public protocol TokenSink3p {
@@ -212,6 +379,14 @@ extension RazorpayTurboUPI.Bank {
 extension RazorpayTurboUPI.Bank {
   public static func getBankList(_ handler: @escaping RazorpayTurboUPI.BanksCompletionHandler)
 }
+public protocol AutopayHeadlessProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createMandate(_ upiAccount: RazorpayTurboUPI.VPADetails, _ merchantVPA: Swift.String, _ txnId: Swift.String?, _ refId: Swift.String?, _ request: [Swift.String : Any], _ callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+  #endif
+  func getMandates(_ callback: @escaping RazorpayTurboUPI.CallBack<[RazorpayTurboUPI.TurboAutopayMandateEntity]>)
+  func getMandateById(_ umn: Swift.String, _ callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+  func updateMandate(_ mandate: RazorpayTurboUPI.TurboAutopayMandateEntity, _ request: [Swift.String : Any], _ callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+}
 public protocol TPVProtocol : AnyObject {
 }
 public struct AllAccounts {
@@ -219,8 +394,12 @@ public struct AllAccounts {
   public var accountsWithPinNotSet: [RazorpayTurboUPI.BankAccount]?
 }
 public protocol PrefetchLinkingDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func update(prefetchedAccounts list: RazorpayTurboUPI.AllAccounts, with error: RazorpayTurboUPI.TurboSDKError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func received(prefetchedAccounts list: RazorpayTurboUPI.AllAccounts, with error: RazorpayTurboUPI.TurboSDKError?)
+  #endif
 }
 @_hasMissingDesignatedInitializers public class PrefetchManager {
   public static let shared: RazorpayTurboUPI.PrefetchManager
@@ -229,11 +408,17 @@ public protocol PrefetchLinkingDelegate : AnyObject {
   @objc deinit
 }
 extension RazorpayTurboUPI.PrefetchManager : RazorpayTurboUPI.PrefetchLinkingDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func received(prefetchedAccounts list: RazorpayTurboUPI.AllAccounts, with error: RazorpayTurboUPI.TurboSDKError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func update(prefetchedAccounts list: RazorpayTurboUPI.AllAccounts, with error: RazorpayTurboUPI.TurboSDKError?)
+  #endif
 }
 extension Swift.Double {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func toIndianCurrencyFormat(maximumFractionDigits: Swift.Int = 0) -> Swift.String?
+  #endif
   public var clean: Swift.String {
     get
   }
@@ -274,6 +459,56 @@ public struct VPAAvailability : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public protocol RazorpayAnalyticEventFlowProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func getCustomerId() -> Swift.String?
+  #endif
+  func logEvent(eventType: RazorpayTurboUPI.AnalyticsEventType, properties: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func getAnalyticEventFlow(event: any RazorpayTurboUPI.RazorpayAnalyticsEventProtocol, flowReferenceId: Swift.String?) -> any RazorpayTurboUPI.RazorpayAnalyticEventFlowProtocol
+  #endif
+}
+public enum AnalyticsEventType : Swift.String, Swift.CaseIterable {
+  case start
+  case called
+  case success
+  case failure
+  case viewed
+  case clicked
+  case critical
+  case searched
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [RazorpayTurboUPI.AnalyticsEventType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [RazorpayTurboUPI.AnalyticsEventType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnalyticsEventCategory : Swift.String {
+  case response
+  case request
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol RazorpayAnalyticsEventProtocol {
+  var eventName: Swift.String { get }
+  func eventName(eventType: RazorpayTurboUPI.AnalyticsEventType) -> Swift.String
+}
+extension RazorpayTurboUPI.RazorpayAnalyticsEventProtocol {
+  public var sdkName: Swift.String {
+    get
+  }
+}
 extension UIKit.UITextField {
   @_Concurrency.MainActor @preconcurrency public class func validateAmountTextField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
 }
@@ -295,8 +530,36 @@ public struct AccountBalance : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public protocol AutopayMandateUIActionProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createMandate(upiAccount: RazorpayTurboUPI.VPADetails, merchantVPA: Swift.String, txnId: Swift.String?, refId: Swift.String?, requestBody: [Swift.String : Any], callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+  #endif
+  func showMandateList(callback: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  func updateMandate(mandate: RazorpayTurboUPI.TurboAutopayMandateEntity, requestBody: [Swift.String : Any], callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+}
+public protocol AutopayMandateUIProtocol : RazorpayTurboUPI.AutopayMandateUIActionProtocol {
+  var headless: any RazorpayTurboUPI.AutopayHeadlessProtocol { get }
+  func initialize(autopayUI: Any) throws
+}
+public protocol AutopayUIDelegate : AnyObject {
+  func setCore(headless: any RazorpayTurboUPI.AutopayHeadlessProtocol, analyticsType: any RazorpayTurboUPI.RazorpayAnalyticEventFlowProtocol.Type)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func createMandate(upiAccount: RazorpayTurboUPI.VPADetails, merchantInfo: RazorpayTurboUPI.MerchantInfo, txnId: Swift.String?, refId: Swift.String?, requestBody: [Swift.String : Any], callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+  #endif
+  func showMandateList(merchantInfo: RazorpayTurboUPI.MerchantInfo, callback: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  func updateMandate(mandate: RazorpayTurboUPI.TurboAutopayMandateEntity, merchantInfo: RazorpayTurboUPI.MerchantInfo, requestBody: [Swift.String : Any], callback: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.TurboAutopayMandateEntity>)
+}
 @_hasMissingDesignatedInitializers public class SDKPreferencesAPI {
   @objc deinit
+}
+public struct UpdateMandateRequestModelWrapper {
+  public let amount: Swift.Int?
+  public let expireAt: Swift.Int?
+  public let action: Swift.String
+  public let validity: RazorpayTurboUPI.TurboAutopayTimeRange?
+  public let pause: RazorpayTurboUPI.TurboAutopayTimeRange?
+  public let description: Swift.String?
+  public init(from json: [Swift.String : Any]) throws
 }
 @_hasMissingDesignatedInitializers public class CustomerFeeBearerAPI {
   @objc deinit
@@ -304,7 +567,9 @@ public struct AccountBalance : Swift.Codable {
 public enum RewardActionType : Swift.String, Swift.Codable {
   case payment
   case onboarding
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -365,7 +630,9 @@ public enum UpiState : Swift.String {
   case notRegistered
   case registered
   case active
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -379,16 +646,27 @@ public class RazorpayUpi {
   public var isOnBoardingFlow: Swift.Bool?
   public var isCustomerEligibleForOnboardingReward: Swift.Bool?
   public var isCustomerEligibleForTransactionReward: Swift.Bool?
+  #if compiler(>=5.3) && $NonescapableTypes
   public var vpa: RazorpayTurboUPI.VPADetails? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var shared: RazorpayTurboUPI.RazorpayUpi? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var autopay: (any RazorpayTurboUPI.AutopayHeadlessProtocol)? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var tpv: (any RazorpayTurboUPI.TPVProtocol)? {
     get
   }
+  #endif
   public static var bankSDKInitialised: Swift.Bool {
     get
   }
@@ -404,32 +682,50 @@ public class RazorpayUpi {
   public static var isRewardsEnabled: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public init?(keyId: Swift.String, sessionId: Swift.String, sim: RazorpayTurboUPI.SIM, orderId: Swift.String?, customerId: Swift.String? = nil, callback: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public init?(keyId: Swift.String, sessionId: Swift.String, orderId: Swift.String?, customerId: Swift.String, callback: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public init?(keyId: Swift.String, sessionId: Swift.String, mobileNo: Swift.String, callback: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  #endif
   public static func isDeviceOnboarded() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public var prefetchConsent: RazorpayTurboUPI.TurboConsent? {
     get
   }
+  #endif
   public func pay(payRequest: RazorpayTurboUPI.PayRequest, _ handler: @escaping RazorpayTurboUPI.moneyHandler)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getPopularBanks() -> [RazorpayTurboUPI.PopularBanks]?
+  #endif
   public func getLinkedAccounts(_ handler: @escaping RazorpayTurboUPI.CallBack<[RazorpayTurboUPI.VPADetails]>)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getXPGService() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getPrefetchPreferedBanks() -> [RazorpayTurboUPI.PrefetchBank]?
+  #endif
   public func getUserConsentAndCalculateFees(payRequest: [Swift.String : Any], _ handler: @escaping RazorpayTurboUPI.CallBack<RazorpayTurboUPI.CustomerFeeBearerData>)
   public static func clearSDKState(caller: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public var accentColorHexCode: Swift.String? {
     get
     set
   }
+  #endif
   public func showRewardInfo()
   @objc deinit
 }
 extension RazorpayTurboUPI.RazorpayUpi {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func savePrefetchConsent(consent: Any, mobileNumber: Swift.String?, customerId: Swift.String?, handler: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
+  #endif
 }
 extension RazorpayTurboUPI.RazorpayUpi {
   public func allotRewards(_ paymentId: Swift.String, handler: @escaping RazorpayTurboUPI.CallBack<Swift.Bool>)
@@ -467,10 +763,14 @@ extension Swift.String {
     get
   }
   public func trim() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func parse<D>(to type: D.Type) -> D? where D : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var toInt: Swift.Int? {
     get
   }
+  #endif
   public var isEmptyOrWhiteSpace: Swift.Bool {
     get
   }
@@ -491,6 +791,15 @@ public struct TPVBankAccount : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct MerchantInfo : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String? = nil, vpa: Swift.String? = nil)
+  #endif
+  public var name: Swift.String?
+  public var vpa: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public typealias PrefetchBank = RazorpayTurboUPI.PopularBanks
 public class ImageCacheAPI {
   public init()
@@ -500,7 +809,9 @@ public class ImageCacheAPI {
 public enum URLType : Swift.String, Swift.Codable {
   case bharat
   case upi
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -526,7 +837,9 @@ public class URLParsedObject : Swift.Codable {
 }
 public class QRParser {
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func parseQR(_ stringToParse: Swift.String) -> Swift.Result<RazorpayTurboUPI.URLParsedObject, any Swift.Error>
+  #endif
   @objc deinit
 }
 public struct VPADetails : Swift.Codable, Swift.Equatable {
@@ -545,7 +858,9 @@ public struct VPADetails : Swift.Codable, Swift.Equatable {
   public let deletedAt: Swift.Double?
   public var isPrimary: Swift.Bool?
   public var rewardStatus: Swift.Bool?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(entity: Swift.String? = nil, id: Swift.String?, address: Swift.String?, handle: Swift.String?, username: Swift.String?, name: Swift.String?, account: RazorpayTurboUPI.BankAccount?, active: Swift.Bool?, validated: Swift.Bool? = nil, verified: Swift.Bool?, isDefault: Swift.Bool?, createdAt: Swift.Int? = nil, deletedAt: Swift.Double? = nil, rewardStatus: Swift.Bool? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -578,7 +893,9 @@ public enum BankAccountState : Swift.Int {
   case linkingInProgress
   case linkingSuccess
   case linkingFailed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -604,7 +921,9 @@ public typealias BanksCompletionHandler = RazorpayTurboUPI.CallBack<[RazorpayTur
 public enum TransactionType : Swift.String, Swift.Codable {
   case collect
   case pay
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -620,7 +939,9 @@ public enum TransactionStatus : Swift.String, Swift.Codable {
   case rejected
   case initiated
   case requested
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -629,7 +950,9 @@ public enum TransactionStatus : Swift.String, Swift.Codable {
 public enum TransactionFlow : Swift.String, Swift.Codable {
   case credit
   case debit
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -646,7 +969,9 @@ public struct Creds : Swift.Codable {
 public struct AccountCredentials : Swift.Codable {
   public let length: Swift.Int?
   public let isSet: Swift.Bool?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(length: Swift.Int?, isSet: Swift.Bool?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -691,7 +1016,9 @@ public struct PayRequest {
     case scan
     case intent
     case p2p
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -707,7 +1034,9 @@ public struct PayRequest {
   public let url: Swift.String?
   public let transactionId: Swift.String?
   public var additionalDetail: [Swift.String : Any]?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(amount: Swift.String, currency: Swift.String, description: Swift.String?, beneficiary: RazorpayTurboUPI.Beneficiary? = nil, vpa: RazorpayTurboUPI.VPADetails? = nil, source: RazorpayTurboUPI.PayRequest.Source? = nil, merchantCategory: Swift.String? = nil, url: Swift.String? = nil, transactionId: Swift.String? = nil, additionalDetail: [Swift.String : Any]? = nil)
+  #endif
 }
 extension UIKit.UIDevice {
   public enum UnsupportedDevices : Swift.String {
@@ -718,14 +1047,18 @@ extension UIKit.UIDevice {
     case iPhone5c
     case iPhone5
     case iPhone6Plus
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     @available(iOS 2.0, *)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func isValid() -> Swift.Result<Swift.Bool, any Swift.Error>
+  #endif
 }
 @_hasMissingDesignatedInitializers public class DictionaryEncoder {
   public func encode<T>(_ value: T) throws -> [Swift.String : Any] where T : Swift.Encodable
@@ -737,7 +1070,9 @@ extension UIKit.UIDevice {
 }
 public class InitiateVerification {
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func initiateVerification(_ location: Swift.String?, completion: @escaping RazorpayTurboUPI.CallBack<[RazorpayTurboUPI.VPADetails]>, progress: ((Swift.String) -> Swift.Void)?)
+  #endif
   @objc deinit
 }
 extension RazorpayTurboUPI.ConsentType : Swift.Equatable {}
@@ -748,6 +1083,21 @@ extension RazorpayTurboUPI.BeneficiaryType : Swift.Hashable {}
 extension RazorpayTurboUPI.BeneficiaryType : Swift.RawRepresentable {}
 extension RazorpayTurboUPI.FailedCheck : Swift.Equatable {}
 extension RazorpayTurboUPI.FailedCheck : Swift.Hashable {}
+extension RazorpayTurboUPI.TurboMandateStatus : Swift.Equatable {}
+extension RazorpayTurboUPI.TurboMandateStatus : Swift.Hashable {}
+extension RazorpayTurboUPI.TurboMandateStatus : Swift.RawRepresentable {}
+extension RazorpayTurboUPI.TurboAmountRule : Swift.Equatable {}
+extension RazorpayTurboUPI.TurboAmountRule : Swift.Hashable {}
+extension RazorpayTurboUPI.TurboAmountRule : Swift.RawRepresentable {}
+extension RazorpayTurboUPI.TurboMandateRecurrencePeriod : Swift.Equatable {}
+extension RazorpayTurboUPI.TurboMandateRecurrencePeriod : Swift.Hashable {}
+extension RazorpayTurboUPI.TurboMandateRecurrencePeriod : Swift.RawRepresentable {}
+extension RazorpayTurboUPI.AnalyticsEventType : Swift.Equatable {}
+extension RazorpayTurboUPI.AnalyticsEventType : Swift.Hashable {}
+extension RazorpayTurboUPI.AnalyticsEventType : Swift.RawRepresentable {}
+extension RazorpayTurboUPI.AnalyticsEventCategory : Swift.Equatable {}
+extension RazorpayTurboUPI.AnalyticsEventCategory : Swift.Hashable {}
+extension RazorpayTurboUPI.AnalyticsEventCategory : Swift.RawRepresentable {}
 extension RazorpayTurboUPI.RewardActionType : Swift.Equatable {}
 extension RazorpayTurboUPI.RewardActionType : Swift.Hashable {}
 extension RazorpayTurboUPI.RewardActionType : Swift.RawRepresentable {}

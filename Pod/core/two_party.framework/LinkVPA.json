@@ -1,0 +1,31 @@
+{
+  "address": "johndoe@hdfcbank",
+  "fundsources": {
+    "entity": "collection",
+    "count": "1",
+    "items": [
+      {
+        "account_reference_number": "B123abc456def789ghi0jkl1234567",
+        "ifsc": "HDFC0000001",
+        "masked_account_number": "XXXXXX9876",
+        "id": "XYZ789abcDEF456",
+        "upi_pin_length": 6,
+        "otp_length": 4,
+        "primary": true,
+        "fundsource_provider": {
+          "logo_url": "https:\/\/banklogos.example.com\/hdfc.png",
+          "mobile_registration_format": "format2",
+          "name": "HDFC Bank",
+          "upi_iin": "601234",
+          "upi_enabled": true
+        },
+        "type": "current",
+        "upi_pin_set": false,
+        "customer_name": "NARAYAN P SHETTIGAR"
+      }
+    ]
+  },
+  "mobile": "919876543210",
+  "customer_reference": "919876543210",
+  "entity": "upi.vpa"
+}
