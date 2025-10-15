@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TurboUpiPluginUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TurboUpiPluginUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreLocation
 import Foundation
 import Razorpay
@@ -20,16 +20,22 @@ public typealias CallBack<T> = (_ response: T?, _ error: TurboUpiPluginUI.TurboE
 }
 @objc public protocol UPITurboResultDelegate {
   @objc func onSuccessFetchingLinkedAcc(_ accList: [TurboUpiPluginUI.UpiAccount])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onErrorFetchingLinkedAcc(_ error: TurboUpiPluginUI.TurboError?)
+  #endif
   @objc optional func onSuccessGetLinkedBankAccounts(_ accList: [TurboUpiPluginUI.LinkedBankAccount])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func onErrorFetchingLinkedBankAccounts(_ error: TurboUpiPluginUI.TurboError?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers public class RazorpayTurbo : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
 extension TurboUpiPluginUI.RazorpayTurbo : RazorpayTurboUPIUI.TokenProvider3p {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchToken(completion: @escaping (RazorpayTurboUPIUI.SessionData?) -> Swift.Void)
+  #endif
 }
 extension TurboUpiPluginUI.RazorpayTurbo {
   public var hasToken: Swift.Bool {
@@ -63,7 +69,9 @@ public protocol RazorpayTokenProvider {
   @objc public var code: TurboUpiPluginUI.TPVLinkActionCode
   @objc public var data: Any?
   @objc public var error: TurboUpiPluginUI.TurboError?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(action: TurboUpiPluginUI.TPVLinkActionCode, error: TurboUpiPluginUI.TurboError? = nil)
+  #endif
   @objc public func registerDevice()
   @objc public func setUpiPin(_ bankAccount: TurboUpiPluginUI.UpiBankAccount, _ card: TurboUpiPluginUI.UpiCard)
   @objc deinit
@@ -77,9 +85,11 @@ public protocol RazorpayTokenProvider {
   @objc public var ifsc: Swift.String?
   @objc public var type: Swift.String?
   @objc public var vpa: TurboUpiPluginUI.Vpa?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var beneficiaryName: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class UpiAllAccounts : ObjectiveC.NSObject {
@@ -128,7 +138,9 @@ public protocol RazorpayTokenProvider {
   @objc final public let bank: TurboUpiPluginUI.UpiBank?
   @objc final public let ifsc: Swift.String?
   @objc public var state: TurboUpiPluginUI.UpiBankAccountState
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String?, creds: TurboUpiPluginUI.UpiBankAccountCredentials?, accountNumber: Swift.String?, beneficiaryName: Swift.String?, type: Swift.String?, bank: TurboUpiPluginUI.UpiBank?, ifsc: Swift.String?, bankAccount: Any, state: TurboUpiPluginUI.UpiBankAccountState?, vpa: Swift.String?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LinkedBankAccount : TurboUpiPluginUI.UpiBankAccount {
@@ -142,7 +154,9 @@ public protocol RazorpayTokenProvider {
   case linkingInProgress
   case linkingSuccess
   case linkingFailed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -167,7 +181,9 @@ public protocol RazorpayTokenProvider {
 }
 @objc public enum LinkActionCode : Swift.Int {
   case consent, sendSms, selectBank, selectBankAccount, setUpiPin, linkAccountResponse, loaderData, askForPermission
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -175,7 +191,9 @@ public protocol RazorpayTokenProvider {
 }
 @objc public enum TPVLinkActionCode : Swift.Int {
   case sendSms, setUpiPin, linkAccountResponse, loaderData
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -195,7 +213,9 @@ public protocol RazorpayTokenProvider {
   @objc public var bankName: Swift.String?
   @objc public var accountNumber: Swift.String
   @objc public var bankLogo: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(ifsc: Swift.String, bankName: Swift.String? = nil, accountNumber: Swift.String, bankLogo: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class TurboError : ObjectiveC.NSObject {
@@ -219,7 +239,9 @@ public protocol RazorpayTokenProvider {
   case gettingBankAccounts
   case linkingBankAccount
   case savingUserConsent
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -231,28 +253,261 @@ public protocol RazorpayTokenProvider {
   @objc public var timeStamp: Swift.String
   @objc public var type: TurboUpiPluginUI.UpiConsentType
   @objc public var data: [Swift.String : Any]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(acknowledge: Swift.Bool, consentMessage: Swift.String, timeStamp: Swift.String, type: TurboUpiPluginUI.UpiConsentType, data: [Swift.String : Any]? = nil)
+  #endif
   @objc deinit
 }
 @objc public enum UpiConsentType : Swift.Int {
   case prefetchAndLink = 0
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+public class Mandate {
+  final public let umn: Swift.String?
+  final public let amount: Swift.Int?
+  final public let amountRule: TurboUpiPluginUI.MandateAmountRule?
+  final public let payer: TurboUpiPluginUI.MandatePayer?
+  final public let payee: TurboUpiPluginUI.MandatePayee?
+  final public let name: Swift.String?
+  final public let expireAt: Swift.Int?
+  final public let blockFund: Swift.Bool?
+  final public let revocableByPayer: Swift.Bool?
+  final public let recurrence: TurboUpiPluginUI.MandateRecurrenceInfo?
+  final public let validity: TurboUpiPluginUI.MandateTimeRange?
+  final public let upiReferenceCategory: TurboUpiPluginUI.UpiReferenceCategory?
+  final public let upiReferenceUrl: Swift.String?
+  final public let description: Swift.String?
+  final public let status: TurboUpiPluginUI.MandateStatus?
+  final public let createdAt: Swift.Int?
+  final public let pause: TurboUpiPluginUI.MandateTimeRange?
+  final public let upiTransactionId: Swift.String?
+  final public let referenceId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(umn: Swift.String?, amount: Swift.Int?, amountRule: TurboUpiPluginUI.MandateAmountRule?, payer: TurboUpiPluginUI.MandatePayer?, payee: TurboUpiPluginUI.MandatePayee?, name: Swift.String?, expireAt: Swift.Int?, blockFund: Swift.Bool?, revocableByPayer: Swift.Bool?, recurrence: TurboUpiPluginUI.MandateRecurrenceInfo?, validity: TurboUpiPluginUI.MandateTimeRange?, upiReferenceCategory: TurboUpiPluginUI.UpiReferenceCategory?, upiReferenceUrl: Swift.String?, descriptionText: Swift.String?, status: TurboUpiPluginUI.MandateStatus?, createdAt: Swift.Int?, pause: TurboUpiPluginUI.MandateTimeRange?, upiTransactionId: Swift.String?, referenceId: Swift.String?)
+  #endif
+  @objc deinit
+}
+public enum MandateAmountRule : Swift.String {
+  case exact
+  case max
+  case unknown
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MandateRecurrenceInfo : Swift.Codable {
+  final public let period: TurboUpiPluginUI.MandateRecurrencePeriod?
+  final public let rule: TurboUpiPluginUI.MandateRecurrenceRule?
+  final public let value: Swift.Int?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case period
+    case rule
+    case value
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(intValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var intValue: Swift.Int? {
+      get
+    }
+    #endif
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(period: TurboUpiPluginUI.MandateRecurrencePeriod?, rule: TurboUpiPluginUI.MandateRecurrenceRule?, value: Swift.Int?)
+  #endif
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum MandateRecurrencePeriod : Swift.String, Swift.Codable {
+  case onetime
+  case daily
+  case weekly
+  case fortnightly
+  case monthly
+  case quarterly
+  case halfyearly
+  case yearly
+  case aspresented
+  case unknown
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MandateRecurrenceRule : Swift.String, Swift.Codable {
+  case on
+  case before
+  case after
+  case unknown
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MandateTimeRange {
+  final public let startAt: Swift.Int?
+  final public let endAt: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(startAt: Swift.Int?, endAt: Swift.Int?)
+  #endif
+  @objc deinit
+}
+public enum UpiReferenceCategory : Swift.String {
+  case `default`
+  case advertisement
+  case invoice
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MandateStatus : Swift.String {
+  case initiated
+  case created
+  case active
+  case completed
+  case paused
+  case failed
+  case unknown
+  public init(string: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MandatePayer {
+  final public let vpa: Swift.String?
+  final public let name: Swift.String?
+  final public let bankAccount: TurboUpiPluginUI.UpiAccount?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(vpa: Swift.String? = nil, name: Swift.String? = nil, account: TurboUpiPluginUI.UpiAccount? = nil)
+  #endif
+  @objc deinit
+}
+public class MandatePayee {
+  final public let vpa: Swift.String?
+  final public let name: Swift.String?
+  final public let mcc: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String? = nil, mcc: Swift.String? = nil, vpa: Swift.String? = nil)
+  #endif
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
   @objc public class func pluginInstance() -> any Razorpay.UPITurboPlugin
   @objc public class func paymentPlugin() -> any Razorpay.PluginPaymentDelegate
   @objc public class func UIPluginInstance() -> any Razorpay.UPITurboUIPlugin
   @objc public class func turboUIPaymentPlugin() -> any Razorpay.PluginPaymentDelegate
+  @objc public class func turboMandateUIPlugin() -> any Razorpay.UPITurboMandatesUIProtocol
   @objc public class func turboTPVUIPlugin() -> any Razorpay.UPITurboTPVUIPlugin
   @objc public class func turboTPVPlugin() -> any Razorpay.UPITurboTPVPlugin
+  @objc public class func turboMandatePlugin() -> any Razorpay.UPITurboMandatesProtocol
   @objc final public class func isDeviceOnboarded() -> Swift.Bool
   @objc final public class func clearSDKState()
   @objc override dynamic public init()
   @objc deinit
+}
+public class CreateMandateRequest {
+  final public let orderId: Swift.String
+  final public let rzpCustomerId: Swift.String
+  final public let mandateAmount: TurboUpiPluginUI.MandateAmount
+  final public let name: Swift.String
+  final public let description: Swift.String
+  final public let recurrence: TurboUpiPluginUI.MandateRecurrenceInfo
+  final public let validity: TurboUpiPluginUI.MandateTimeRange
+  final public let blockFund: Swift.Bool
+  final public let revocableByPayer: Swift.Bool
+  final public let upiReferenceCategory: TurboUpiPluginUI.UpiReferenceCategory?
+  final public let upiReferenceUrl: Swift.String?
+  final public let email: Swift.String?
+  final public let currency: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(orderId: Swift.String, rzpCustomerId: Swift.String, mandateAmount: TurboUpiPluginUI.MandateAmount, recurrence: TurboUpiPluginUI.MandateRecurrenceInfo, validity: TurboUpiPluginUI.MandateTimeRange, name: Swift.String, description: Swift.String, blockFund: Swift.Bool = false, revocableByPayer: Swift.Bool = true, upiReferenceCategory: TurboUpiPluginUI.UpiReferenceCategory?, upiReferenceUrl: Swift.String?, email: Swift.String? = nil, currency: Swift.String? = "INR")
+  #endif
+  @objc deinit
+}
+public class UpdateMandateRequest {
+  public enum Action : Swift.String {
+    case update
+    case revoke
+    case pause
+    case unpause
+    public var rawValue: Swift.String {
+      get
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+  }
+  final public let amount: Swift.Int?
+  final public let action: TurboUpiPluginUI.UpdateMandateRequest.Action
+  final public let validity: TurboUpiPluginUI.MandateTimeRange?
+  final public let pause: TurboUpiPluginUI.MandateTimeRange?
+  final public let description: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(amount: Swift.Int?, action: TurboUpiPluginUI.UpdateMandateRequest.Action, validity: TurboUpiPluginUI.MandateTimeRange?, pause: TurboUpiPluginUI.MandateTimeRange? = nil, description: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func update(amount: Swift.Int?, endAt: Swift.Int?, description: Swift.String?) -> TurboUpiPluginUI.UpdateMandateRequest
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func revoke(description: Swift.String?) -> TurboUpiPluginUI.UpdateMandateRequest
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func pause(pauseEndAt: Swift.Int?, description: Swift.String?) -> TurboUpiPluginUI.UpdateMandateRequest
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func unpause(description: Swift.String?) -> TurboUpiPluginUI.UpdateMandateRequest
+  #endif
+  @objc deinit
+}
+public enum MandateAmount {
+  case exact(amount: Swift.Int)
+  case max(amount: Swift.Int, firstDebitAmount: Swift.Int?)
+  public var amount: Swift.Int {
+    get
+  }
 }
 extension TurboUpiPluginUI.UpiBankAccountState : Swift.Equatable {}
 extension TurboUpiPluginUI.UpiBankAccountState : Swift.Hashable {}
@@ -269,3 +524,24 @@ extension TurboUpiPluginUI.LoaderDataEnum : Swift.RawRepresentable {}
 extension TurboUpiPluginUI.UpiConsentType : Swift.Equatable {}
 extension TurboUpiPluginUI.UpiConsentType : Swift.Hashable {}
 extension TurboUpiPluginUI.UpiConsentType : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.MandateAmountRule : Swift.Equatable {}
+extension TurboUpiPluginUI.MandateAmountRule : Swift.Hashable {}
+extension TurboUpiPluginUI.MandateAmountRule : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.MandateRecurrenceInfo.CodingKeys : Swift.Equatable {}
+extension TurboUpiPluginUI.MandateRecurrenceInfo.CodingKeys : Swift.Hashable {}
+extension TurboUpiPluginUI.MandateRecurrenceInfo.CodingKeys : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.MandateRecurrencePeriod : Swift.Equatable {}
+extension TurboUpiPluginUI.MandateRecurrencePeriod : Swift.Hashable {}
+extension TurboUpiPluginUI.MandateRecurrencePeriod : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.MandateRecurrenceRule : Swift.Equatable {}
+extension TurboUpiPluginUI.MandateRecurrenceRule : Swift.Hashable {}
+extension TurboUpiPluginUI.MandateRecurrenceRule : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.UpiReferenceCategory : Swift.Equatable {}
+extension TurboUpiPluginUI.UpiReferenceCategory : Swift.Hashable {}
+extension TurboUpiPluginUI.UpiReferenceCategory : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.MandateStatus : Swift.Equatable {}
+extension TurboUpiPluginUI.MandateStatus : Swift.Hashable {}
+extension TurboUpiPluginUI.MandateStatus : Swift.RawRepresentable {}
+extension TurboUpiPluginUI.UpdateMandateRequest.Action : Swift.Equatable {}
+extension TurboUpiPluginUI.UpdateMandateRequest.Action : Swift.Hashable {}
+extension TurboUpiPluginUI.UpdateMandateRequest.Action : Swift.RawRepresentable {}

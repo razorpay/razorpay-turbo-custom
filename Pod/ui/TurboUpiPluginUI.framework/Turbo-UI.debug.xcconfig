@@ -1,0 +1,13 @@
+//
+//  Turbo-UI-Release.xcconfig
+//  RazorpayIOS
+//
+//  Created by Nirman Kalia on 24/09/25.
+//  Copyright © 2025 Razorpay. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-TurboUpiPluginUI/Pods-TurboUpiPluginUI.debug.xcconfig"
+#include "TurboCommonConfig.xcconfig"
