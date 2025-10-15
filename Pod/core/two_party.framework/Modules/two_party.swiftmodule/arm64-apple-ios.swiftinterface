@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name two_party
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CommonLibrary
@@ -23,43 +23,15 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class MandateRecurrenceInfo : ObjectiveC.NSObject, Swift.Codable {
-  public var period: two_party.MandateRecurrencePeriod?
+  public var period: two_party.MandateRecurrencePeriod
   public var rule: two_party.MandateRecurrenceRule?
   public var value: Swift.Int?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case period
-    case rule
-    case value
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
-    public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
-    public var intValue: Swift.Int? {
-      get
-    }
-    #endif
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(period: two_party.MandateRecurrencePeriod?, rule: two_party.MandateRecurrenceRule?, value: Swift.Int?)
-  #endif
+  public init(period: two_party.MandateRecurrencePeriod, rule: two_party.MandateRecurrenceRule?, value: Swift.Int?)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public enum MandateStatus : Swift.String {
+@objc public enum MandateStatus : Swift.Int {
   case initiated
   case created
   case active
@@ -70,14 +42,10 @@ public enum MandateStatus : Swift.String {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(string: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init(string: Swift.String)
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -91,12 +59,8 @@ public enum UpiReferenceCategory : Swift.String {
   case advertisement
   case invoice
   case unspecified
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(string: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public init(string: Swift.String)
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -105,16 +69,12 @@ public enum UpiReferenceCategory : Swift.String {
 @objc public class SearchPaymentResponse : ObjectiveC.NSObject {
   @objc public var count: Swift.Int
   @objc public var items: [two_party.RZPPayment]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(count: Swift.Int, items: [two_party.RZPPayment]?)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class NPCICredentialHelper {
   public static var txnId: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getMandateCredentials(bankName: Swift.String, accountNumber: Swift.String, vpaAddress: Swift.String, payerName: Swift.String, payeeName: Swift.String, payeeVpa: Swift.String, transactionAmount: Swift.String, txnNote: Swift.String = "Mandate Payment", customTxnId: Swift.String? = nil, mobileNumber: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, Swift.String?, (any Swift.Error)?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class FundSourceProviderResponse : ObjectiveC.NSObject {
@@ -130,9 +90,7 @@ public enum UpiReferenceCategory : Swift.String {
     get
   }
   public init(string: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -147,30 +105,20 @@ public enum UpiReferenceCategory : Swift.String {
 @objc public protocol ErrorMonitoringAlertingProtocol {
   @objc func initSentry(sdkType: Swift.String, dsn: Swift.String, tracesSampleRate: Swift.Double)
   @objc func startTransaction(name: Swift.String) -> Any
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func finishTransaction(transaction: Any?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func captureMessage(name: Swift.String, _ error: (any Swift.Error)?)
-  #endif
 }
 @objc public class SessionData : ObjectiveC.NSObject {
   public var sessionToken: Swift.String
   final public let sessionId: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(sessionToken: Swift.String, sessionId: Swift.String? = nil)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CommonOnboarding {
   public static func initialise(customer_reference: Swift.String, sessionData: two_party.SessionData, callback: @escaping two_party.CallBack<two_party.Empty>)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getPermissionList(callback: ([Swift.String]?, two_party.SDKError?) -> Swift.Void)
-  #endif
   public static func checkPermissions(callback: @escaping two_party.CallBack<[Swift.String : Any]>)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func register(sim: two_party.SIM? = nil, encryptionKey: Swift.String? = nil, callback: @escaping two_party.CallBack<two_party.RegisterResponse>)
-  #endif
   public static func deRegister(callback: @escaping two_party.CallBack<two_party.DeRegisterResponse>)
   public static func clearSDKState()
   @objc deinit
@@ -198,9 +146,7 @@ public enum UpiReferenceCategory : Swift.String {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -209,34 +155,7 @@ public enum UpiReferenceCategory : Swift.String {
 @objc @objcMembers public class MandateTimeRange : ObjectiveC.NSObject, Swift.Codable {
   final public let startAt: Swift.Int?
   final public let endAt: Swift.Int?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case startAt
-    case endAt
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
-    public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
-    public var intValue: Swift.Int? {
-      get
-    }
-    #endif
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(startAt: Swift.Int?, endAt: Swift.Int?)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -262,12 +181,8 @@ public class MandateResponseTimeRange : Swift.Codable {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(string: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public init(string: Swift.String)
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -275,25 +190,17 @@ public class MandateResponseTimeRange : Swift.Codable {
 }
 @_inheritsConvenienceInitializers @objc public class RazorpayUpi2p : ObjectiveC.NSObject {
   public static let tokenManager: two_party.TokenTaskManager2p
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func initialise(customer_reference: Swift.String, sessionData: two_party.SessionData, sentryInstance: (any two_party.ErrorMonitoringAlertingProtocol)? = nil, callback: @escaping two_party.CallBack<two_party.Empty>)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getPermissionsList(callback: ([Swift.String]?, two_party.SDKError?) -> Swift.Void)
-  #endif
   @objc public static func checkPermissions(callback: @escaping two_party.CallBack<[Swift.String : Any]>)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func register(sim: two_party.SIM? = nil, encryptionKey: Swift.String, callback: @escaping two_party.CallBack<two_party.RegisterResponse>)
-  #endif
   @objc public static func getFundSourceProviders(callback: @escaping two_party.CallBack<two_party.FundSourceProviderResponse>)
   @objc public static func getLinkedFundSources(callback: @escaping two_party.CallBack<two_party.LinkedFundSourceResponse>)
   @objc public static func checkAvailability(vpa: Swift.String, callback: @escaping two_party.CallBack<two_party.CheckVPAAvailabilityResponse>)
   @objc public static func createPayment(upi: two_party.UPI, amount: Swift.String, type: two_party.PaymentType, description: Swift.String, payer: two_party.Payer, payee: two_party.Payee, expireAt: Swift.Int, referenceId: Swift.String, callback: @escaping two_party.CallBack<two_party.RZPPayment>)
   @objc public static func clearSDKState()
   @objc public static func deRegister(callback: @escaping two_party.CallBack<two_party.DeRegisterResponse>)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func createMandate(fundSource: two_party.FundSource, payee: two_party.Payee, txnId: Swift.String?, refId: Swift.String?, requestBody: [Swift.String : Any], callback: @escaping two_party.CallBack<two_party.AutopayMandate>)
-  #endif
   @objc public static func getMandateById(umn: Swift.String, callback: @escaping two_party.CallBack<two_party.AutopayMandate>)
   @objc public static func getMandates(callback: @escaping two_party.CallBack<[two_party.AutopayMandate]>)
   @objc public static func updateMandate(mandate: two_party.AutopayMandate, requestBody: [Swift.String : Any], payee: two_party.Payee, callback: @escaping two_party.CallBack<two_party.AutopayMandate>)
@@ -307,28 +214,26 @@ public class MandateResponseTimeRange : Swift.Codable {
   @objc deinit
 }
 @objc public class AutopayMandate : ObjectiveC.NSObject {
-  public var umn: Swift.String?
-  public var amount: Swift.Int?
-  public var amountRule: two_party.AmountRule?
-  public var payer: two_party.Payer?
-  public var payee: two_party.Payee?
-  public var name: Swift.String?
-  public var expireAt: Swift.Int?
-  public var blockFund: Swift.Bool?
-  public var revocableByPayer: Swift.Bool?
-  public var recurrence: two_party.MandateRecurrenceInfo?
-  public var validity: two_party.MandateTimeRange?
-  public var upiReferenceCategory: two_party.UpiReferenceCategory?
-  public var upiReferenceUrl: Swift.String?
+  public var umn: Swift.String
+  public var amount: Swift.Int
+  public var amountRule: two_party.AmountRule
+  public var payer: two_party.Payer
+  public var payee: two_party.Payee
+  public var name: Swift.String
+  public var expireAt: Swift.Int
+  public var blockFund: Swift.Bool
+  public var revocableByPayer: Swift.Bool
+  public var recurrence: two_party.MandateRecurrenceInfo
+  public var validity: two_party.MandateTimeRange
+  public var upiReferenceCategory: two_party.UpiReferenceCategory
+  public var upiReferenceUrl: Swift.String
   public var descriptionText: Swift.String?
-  public var status: two_party.MandateStatus?
-  public var createdAt: Swift.Int?
+  public var status: two_party.MandateStatus
+  public var createdAt: Swift.Int
   public var pause: two_party.MandateTimeRange?
   public var upiTransactionId: Swift.String?
   public var referenceId: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(umn: Swift.String?, amount: Swift.Int?, amountRule: two_party.AmountRule?, payer: two_party.Payer?, payee: two_party.Payee?, name: Swift.String?, expireAt: Swift.Int?, blockFund: Swift.Bool?, revocableByPayer: Swift.Bool?, recurrence: two_party.MandateRecurrenceInfo?, validity: two_party.MandateTimeRange?, upiReferenceCategory: two_party.UpiReferenceCategory?, upiReferenceUrl: Swift.String?, descriptionText: Swift.String?, status: two_party.MandateStatus?, createdAt: Swift.Int?, pause: two_party.MandateTimeRange?, upiTransactionId: Swift.String?, referenceId: Swift.String?)
-  #endif
+  public init(umn: Swift.String, amount: Swift.Int, amountRule: two_party.AmountRule, payer: two_party.Payer, payee: two_party.Payee, name: Swift.String, expireAt: Swift.Int, blockFund: Swift.Bool, revocableByPayer: Swift.Bool, recurrence: two_party.MandateRecurrenceInfo, validity: two_party.MandateTimeRange, upiReferenceCategory: two_party.UpiReferenceCategory, upiReferenceUrl: Swift.String, descriptionText: Swift.String?, status: two_party.MandateStatus, createdAt: Swift.Int, pause: two_party.MandateTimeRange?, upiTransactionId: Swift.String?, referenceId: Swift.String?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RegisterResponse : ObjectiveC.NSObject {
@@ -339,9 +244,7 @@ public class MandateResponseTimeRange : Swift.Codable {
 @objc public enum RegisterStatus : Swift.Int {
   case deviceBindingCompleted
   case onboardingCompleted
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -354,9 +257,7 @@ public class MandateResponseTimeRange : Swift.Codable {
   @objc public var mcc: Swift.String?
   @objc public var responseCode: Swift.String
   @objc public var reversalResponseCode: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(vpa: Swift.String, fundsource: two_party.FundSource?, name: Swift.String, mcc: Swift.String? = nil, responseCode: Swift.String, reversalResponseCode: Swift.String)
-  #endif
   @objc deinit
 }
 @objc public enum PaymentInitiationMode : Swift.Int {
@@ -379,9 +280,7 @@ public class MandateResponseTimeRange : Swift.Codable {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -392,9 +291,7 @@ public class MandateResponseTimeRange : Swift.Codable {
   @objc public var status: two_party.VpaStatus
   @objc public var verified: Swift.Bool
   @objc public var isPrimary: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(address: Swift.String?, status: two_party.VpaStatus, verified: Swift.Bool, isPrimary: Swift.Bool)
-  #endif
   @objc deinit
 }
 public typealias CallBack<T> = (T?, two_party.SDKError?) -> Swift.Void
@@ -415,9 +312,7 @@ public typealias CompletionHandler<T> = (T?) -> Swift.Void
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -425,9 +320,7 @@ public typealias CompletionHandler<T> = (T?) -> Swift.Void
 }
 public enum UpiPinAction : Swift.String {
   case set, reset
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -451,12 +344,8 @@ public enum UpiPinAction : Swift.String {
   @objc public var primary: Swift.Bool
   @objc public var vpa: [two_party.RZPVPA]?
   @objc public var providerFormat: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String, type: two_party.FundSourceType, customerName: Swift.String, accountReferenceNumber: Swift.String, maskedAccountNumber: Swift.String, ifsc: Swift.String, npciBankCode: Swift.Int, bankName: Swift.String, upiPinSet: Swift.Bool, upiPinLength: Swift.Int, otpLength: Swift.Int, atmPinLength: Swift.Int, balance: Swift.Double, currency: Swift.String, primary: Swift.Bool, vpa: [two_party.RZPVPA]? = nil, providerFormat: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(id: Swift.String, vpa: Swift.String, upiPinLenght: Swift.Int, atmPinLength: Swift.Int, otpLength: Swift.Int, providerFormat: Swift.String, maskedAccountNumber: Swift.String, accountRefNum: Swift.String, bankName: Swift.String? = "")
-  #endif
   @objc deinit
 }
 extension two_party.FundSource {
@@ -473,9 +362,7 @@ extension two_party.FundSource {
   @objc public var tenantType: Swift.String?
   @objc public var originalTenantMessageId: Swift.String?
   @objc public var device: two_party.Device?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(tenantId: Swift.String, tenantCustomerId: Swift.String, tenantType: Swift.String? = nil, originalTenantMessageId: Swift.String? = nil)
-  #endif
   @objc deinit
 }
 @objc public class RZPPayment : ObjectiveC.NSObject {
@@ -489,24 +376,16 @@ extension two_party.FundSource {
   @objc public var status: two_party.PaymentStatus
   @objc public var createdAt: Swift.String?
   @objc public var updatedAt: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(upi: two_party.UPI? = nil, id: Swift.String?, amount: two_party.Amount? = nil, type: two_party.PaymentType, paymentDescription: Swift.String? = nil, payer: two_party.PaymentParty? = nil, payee: [two_party.PaymentParty]? = nil, status: two_party.PaymentStatus, createdAt: Swift.String?, updatedAt: Swift.String?)
-  #endif
   @objc deinit
 }
 extension two_party.RZPPayment {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func approve(upi: two_party.UPI, callback: (two_party.RZPPayment?, two_party.SDKError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func reject(upi: two_party.UPI, callback: (two_party.RZPPayment?, two_party.SDKError?) -> Swift.Void)
-  #endif
 }
 @objc public class DeRegisterResponse : ObjectiveC.NSObject {
   @objc public var mobile: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(mobile: Swift.String?)
-  #endif
   @objc deinit
 }
 @objc public enum FundSourceType : Swift.Int {
@@ -523,9 +402,7 @@ extension two_party.RZPPayment {
     get
   }
   public init(string: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -539,9 +416,7 @@ extension two_party.RZPPayment {
   @objc public var message: Swift.String
   @objc public var retryWithToken: ((_ token: Swift.String) -> Swift.Void)?
   @objc public var isExternal: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(code: Swift.String, source: Swift.String? = nil, reason: Swift.String? = nil, step: Swift.String? = nil, message: Swift.String, isExternal: Swift.Bool = false, internalErrorCode: Swift.String = "", statuscode: Swift.Int? = nil, internalDescription: Swift.String = "", metadata: [Swift.String : Any]? = nil)
-  #endif
   @objc deinit
 }
 public struct UpdateMandateRequestModel : Swift.Codable {
@@ -549,10 +424,8 @@ public struct UpdateMandateRequestModel : Swift.Codable {
     case update
     case revoke
     case pause
-    case resume
-    #if compiler(>=5.3) && $NonescapableTypes
+    case unpause
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -572,43 +445,12 @@ public struct UpdateMandateRequestModel : Swift.Codable {
   public let validity: two_party.MandateTimeRange?
   public let pause: two_party.MandateTimeRange?
   public let description: Swift.String?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case amount
-    case expireAt
-    case action
-    case validity
-    case pause
-    case description
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
-    public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
-    public var intValue: Swift.Int? {
-      get
-    }
-    #endif
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from json: [Swift.String : Any]) throws
 }
 public protocol TokenProvider2p {
-  #if compiler(>=5.3) && $NonescapableTypes
   func fetchToken(completion: @escaping (Swift.String?) -> Swift.Void)
-  #endif
 }
 public protocol TokenSink2p {
   func storeToken(_ token: Swift.String)
@@ -633,12 +475,8 @@ public class TokenTaskManager2p {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(string: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -662,13 +500,9 @@ public class TokenTaskManager2p {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(string: Swift.String?)
-  #endif
+  public init(string: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -687,9 +521,7 @@ public class TokenTaskManager2p {
   @objc public var logoURL: Swift.String?
   @objc public var mobileRegistrationFormat: two_party.MobileRegistrationFormat
   public var product: [two_party.FundSourceProviderProduct]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String? = nil, npciBankCode: Swift.String, ifsc: Swift.String? = nil, upiEnabled: Swift.Bool, logoURL: Swift.String?, mobileRegistrationFormat: two_party.MobileRegistrationFormat, product: [two_party.FundSourceProviderProduct])
-  #endif
   @objc deinit
 }
 extension two_party.FundSourceProvider {
@@ -703,9 +535,7 @@ extension two_party.FundSourceProvider {
   @objc public var responseCode: Swift.String?
   @objc public var responseMessage: Swift.String?
   @objc public var paymentPurpose: two_party.PaymentPurpose
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(transactionId: Swift.String?, initiationMode: two_party.PaymentInitiationMode = .default, referenceId: Swift.String? = nil, responseStatus: Swift.String? = nil, responseCode: Swift.String? = nil, responseMessage: Swift.String? = nil, paymentPurpose: two_party.PaymentPurpose = .default)
-  #endif
   @objc deinit
 }
 @objc public class SIM : ObjectiveC.NSObject {
@@ -727,9 +557,7 @@ extension two_party.FundSourceProvider {
   @objc public var bankAccount: two_party.BankAccount?
   @objc public var name: Swift.String?
   @objc public var mcc: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String? = nil, mcc: Swift.String? = nil, vpa: Swift.String? = nil, bankAccount: two_party.BankAccount? = nil)
-  #endif
   @objc deinit
 }
 @objc public enum FundSourceProviderProduct : Swift.Int {
@@ -739,9 +567,7 @@ extension two_party.FundSourceProvider {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -750,7 +576,7 @@ extension two_party.FundSourceProvider {
 public struct CreateMandateRequestModel : Swift.Codable {
   public enum CreateMandateRequestError : Swift.Error, Swift.CustomStringConvertible, Swift.Equatable {
     case missingRequiredField(Swift.String)
-    case invalidField(field: Swift.String, description: Swift.String)
+    case invalidField(Swift.String)
     case unknown
     public var description: Swift.String {
       get
@@ -759,51 +585,15 @@ public struct CreateMandateRequestModel : Swift.Codable {
   }
   public let amount: Swift.Int
   public let amountRule: Swift.String
-  public let firstDebitAmount: Swift.Int?
   public let name: Swift.String
-  public let description: Swift.String?
+  public let description: Swift.String
   public let expireAt: Swift.Int
-  public let blockFund: Swift.Bool?
+  public let blockFund: Swift.Bool
   public let revocableByPayer: Swift.Bool
   public let recurrence: two_party.MandateRecurrenceInfo
   public let validity: two_party.MandateTimeRange
-  public let upiReferenceCategory: Swift.String?
-  public let upiReferenceURL: Swift.String?
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case amount
-    case amountRule
-    case name
-    case description
-    case expireAt
-    case blockFund
-    case revocableByPayer
-    case recurrence
-    case validity
-    case upiReferenceCategory
-    case upiReferenceURL
-    case firstDebitAmount
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(stringValue: Swift.String)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(intValue: Swift.Int)
-    #endif
-    public typealias RawValue = Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
-    public var intValue: Swift.Int? {
-      get
-    }
-    #endif
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
+  public let upiReferenceCategory: Swift.String
+  public let upiReferenceURL: Swift.String
   public init(from decoder: any Swift.Decoder) throws
   public init(from json: [Swift.String : Any]) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -815,9 +605,7 @@ public struct CreateMandateRequestModel : Swift.Codable {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -832,9 +620,7 @@ public struct CreateMandateRequestModel : Swift.Codable {
   @objc public var fundSource: two_party.FundSource?
   @objc public var vpa: Swift.String?
   @objc public var name: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(fundSource: two_party.FundSource? = nil, vpa: Swift.String? = nil, name: Swift.String? = nil)
-  #endif
   @objc deinit
 }
 public enum MandateRecurrenceRule : Swift.Int, Swift.Codable {
@@ -845,21 +631,14 @@ public enum MandateRecurrenceRule : Swift.Int, Swift.Codable {
   public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(string: Swift.String?)
-  #endif
+  public init(string: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-extension two_party.MandateRecurrenceInfo.CodingKeys : Swift.Equatable {}
-extension two_party.MandateRecurrenceInfo.CodingKeys : Swift.Hashable {}
-extension two_party.MandateRecurrenceInfo.CodingKeys : Swift.RawRepresentable {}
 extension two_party.MandateStatus : Swift.Equatable {}
 extension two_party.MandateStatus : Swift.Hashable {}
 extension two_party.MandateStatus : Swift.RawRepresentable {}
@@ -872,9 +651,6 @@ extension two_party.PaymentType : Swift.RawRepresentable {}
 extension two_party.PaymentStatus : Swift.Equatable {}
 extension two_party.PaymentStatus : Swift.Hashable {}
 extension two_party.PaymentStatus : Swift.RawRepresentable {}
-extension two_party.MandateTimeRange.CodingKeys : Swift.Equatable {}
-extension two_party.MandateTimeRange.CodingKeys : Swift.Hashable {}
-extension two_party.MandateTimeRange.CodingKeys : Swift.RawRepresentable {}
 extension two_party.AmountRule : Swift.Equatable {}
 extension two_party.AmountRule : Swift.Hashable {}
 extension two_party.AmountRule : Swift.RawRepresentable {}
@@ -896,9 +672,6 @@ extension two_party.FundSourceType : Swift.RawRepresentable {}
 extension two_party.UpdateMandateRequestModel.Action : Swift.Equatable {}
 extension two_party.UpdateMandateRequestModel.Action : Swift.Hashable {}
 extension two_party.UpdateMandateRequestModel.Action : Swift.RawRepresentable {}
-extension two_party.UpdateMandateRequestModel.CodingKeys : Swift.Equatable {}
-extension two_party.UpdateMandateRequestModel.CodingKeys : Swift.Hashable {}
-extension two_party.UpdateMandateRequestModel.CodingKeys : Swift.RawRepresentable {}
 extension two_party.MobileRegistrationFormat : Swift.Equatable {}
 extension two_party.MobileRegistrationFormat : Swift.Hashable {}
 extension two_party.MobileRegistrationFormat : Swift.RawRepresentable {}
@@ -908,9 +681,6 @@ extension two_party.MandateRecurrencePeriod : Swift.RawRepresentable {}
 extension two_party.FundSourceProviderProduct : Swift.Equatable {}
 extension two_party.FundSourceProviderProduct : Swift.Hashable {}
 extension two_party.FundSourceProviderProduct : Swift.RawRepresentable {}
-extension two_party.CreateMandateRequestModel.CodingKeys : Swift.Equatable {}
-extension two_party.CreateMandateRequestModel.CodingKeys : Swift.Hashable {}
-extension two_party.CreateMandateRequestModel.CodingKeys : Swift.RawRepresentable {}
 extension two_party.VpaStatus : Swift.Equatable {}
 extension two_party.VpaStatus : Swift.Hashable {}
 extension two_party.VpaStatus : Swift.RawRepresentable {}
