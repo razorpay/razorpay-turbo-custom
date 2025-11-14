@@ -1,0 +1,149 @@
+{
+  "entity": "collection",
+  "count": "6",
+  "items": [
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "ICIC00ABWCC",
+      "upi_enabled": false,
+      "id": "POKIihdOTgUUiS",
+      "upi_iin": "508983",
+      "mobile_registration_format": "format1",
+      "name": "510 ARMY BASE W S CREDIT CO OP PRIMARY BANK LTD",
+      "upi_versions_supported": [
+        {
+          "version": "2.0",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "ABHY",
+      "upi_enabled": false,
+      "id": "POKIgKAT5cdZmG",
+      "upi_iin": "607261",
+      "mobile_registration_format": "format2",
+      "name": "ABHYUDAYA CO OP BANK LTD",
+      "upi_versions_supported": [
+        {
+          "version": "1.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.1",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "IBKL0100ACB",
+      "upi_enabled": false,
+      "id": "POKIiBiW1h4Xa2",
+      "upi_iin": "607186",
+      "mobile_registration_format": "format1",
+      "name": "ACE CO OP BANK LTD",
+      "upi_versions_supported": [
+        {
+          "version": "2.0",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "HDFC0CADARS",
+      "upi_enabled": false,
+      "id": "POKIgdtmr0MMGF",
+      "upi_iin": "607844",
+      "mobile_registration_format": "format2",
+      "name": "ADARSH CO OPERATIVE BANK LTD",
+      "upi_versions_supported": [
+        {
+          "version": "1.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.1",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "HDFC0CMBANK",
+      "upi_enabled": false,
+      "id": "POKIgPOh5QtqwG",
+      "upi_iin": "607715",
+      "mobile_registration_format": "format1",
+      "name": "Ahmednagar Merchant's Co Operative Bank Ltd",
+      "upi_versions_supported": [
+        {
+          "version": "1.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.1",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "entity": "upi.fundsource_provider",
+      "ifsc": "AIRP",
+      "upi_enabled": false,
+      "id": "POKIiGpzEUgxnH",
+      "upi_iin": "990288",
+      "logo_url": "https://www.axisbank.com/bank_logos/19_Airtel_Payments_Bank_Icons.png",
+      "mobile_registration_format": "format1",
+      "name": "AIRTEL PAYMENTS BANK LTD",
+      "upi_versions_supported": [
+        {
+          "version": "1.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.0",
+          "mandatory": false
+        },
+        {
+          "version": "2.28",
+          "mandatory": false
+        },
+        {
+          "version": "2.1",
+          "mandatory": false
+        },
+        {
+          "version": "2.26",
+          "mandatory": false
+        },
+        {
+          "version": "2.13",
+          "mandatory": false
+        },
+        {
+          "version": "2.7",
+          "mandatory": false
+        },
+        {
+          "version": "2.96",
+          "mandatory": false
+        }
+      ]
+    }
+  ]
+}

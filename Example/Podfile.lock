@@ -1,16 +1,38 @@
 PODS:
-  - razorpay-turbo-ui-pod (0.1.0)
+  - razorpay-customui-pod (2.0.19)
+  - razorpay-turbo-custom (2.1.5):
+    - razorpay-turbo-custom/Core (= 2.1.5)
+    - razorpay-turbo-custom/headless (= 2.1.5)
+    - razorpay-turbo-custom/ui (= 2.1.5)
+  - razorpay-turbo-custom/Core (2.1.5)
+  - razorpay-turbo-custom/headless (2.1.5):
+    - razorpay-customui-pod
+    - razorpay-turbo-custom/Core
+  - razorpay-turbo-custom/ui (2.1.5):
+    - razorpay-customui-pod
+    - razorpay-turbo-custom/Core
 
 DEPENDENCIES:
-  - razorpay-turbo-ui-pod (from `../`)
+  - razorpay-turbo-custom (from `https://github.com/razorpay/razorpay-turbo-custom.git`, branch `release/2.1.5`)
+
+SPEC REPOS:
+  trunk:
+    - razorpay-customui-pod
 
 EXTERNAL SOURCES:
-  razorpay-turbo-ui-pod:
-    :path: "../"
+  razorpay-turbo-custom:
+    :branch: release/2.1.5
+    :git: https://github.com/razorpay/razorpay-turbo-custom.git
+
+CHECKOUT OPTIONS:
+  razorpay-turbo-custom:
+    :commit: cf119507d322fd67326f96c43c4b59c475794bb5
+    :git: https://github.com/razorpay/razorpay-turbo-custom.git
 
 SPEC CHECKSUMS:
-  razorpay-turbo-ui-pod: 093ab51387e2251cb2670fc568043b023f61fd83
+  razorpay-customui-pod: 50f58cb9678f2c739b25e3ad773d218f3201e9c8
+  razorpay-turbo-custom: 8b9eb125e502a68c54b90e6aa708ecbf3408ee85
 
-PODFILE CHECKSUM: 53d12b498d02d7dcd867eba46b0a9b8e59966c85
+PODFILE CHECKSUM: 8f5a8ff84a72ec14587c6c5837847558f69eff0c
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.16.2

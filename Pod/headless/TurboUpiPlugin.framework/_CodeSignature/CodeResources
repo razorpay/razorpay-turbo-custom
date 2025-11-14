@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TurboUpiPlugin-Swift.h</key>
 		<data>
-		mV2pshbxx3gTAV+v2ZwEolAXNrE=
+		f2ieWCd16UjFcEhmZDjOpFwObBk=
 		</data>
 		<key>Headers/TurboUpiPlugin.h</key>
 		<data>
@@ -14,35 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2zKBDr+Qx31RnKGJHPGAr4dvKww=
+		7rLNnHAQ3Qs2aQkPQPxYs2dijyI=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		fPQpzeUlbpFxelqa1L9U4JZv7kY=
+		BnL5ead5OcZDiXSsdZXUJD8J4K8=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WbGlbibLRuq2kkVFQ/0yTo9tllg=
+		1ijZvO5R7DINCtzUUJp9PqmLFfs=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		l2rnP2JzPKmWSvL9KD2a2eaYixs=
+		w9iIySihtsB7WWV5w8YRxDefnFc=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6hD02SY6usmiIRSu3Q5OMyL8vw0=
+		PmQwKp8XrRkjFtNkH1xpudwPFvs=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		l2rnP2JzPKmWSvL9KD2a2eaYixs=
+		w9iIySihtsB7WWV5w8YRxDefnFc=
 		</data>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		f85hp2rBnZQ3kKENI/Rd3HyQXK4=
+		EX8qy2TRLX1xp2BObKuufPJnseo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		/mois32LHNhiN88T3GLwTvozS0g=
+		</data>
+		<key>Turbo-Headless.debug.xcconfig</key>
+		<data>
+		fuSK7eo2DeELYbFQ/3qCqCURpKc=
+		</data>
+		<key>Turbo-Headless.release.xcconfig</key>
+		<data>
+		ik1ZCCwWlVT/xGb83I7dDh/Y+3k=
+		</data>
+		<key>Turbo-UI.debug.xcconfig</key>
+		<data>
+		wU7TwbfIFoR+bPYRPm0qQpAQaoM=
+		</data>
+		<key>Turbo-UI.release.xcconfig</key>
+		<data>
+		0iTidp41dZZS0PQdoJ4YBLHkN+U=
+		</data>
+		<key>TurboCommonConfig.xcconfig</key>
+		<data>
+		xdN1icTxeqGmo1opte5tudJVwOI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P7ssIfFjXDbI8DDIM5/cKQSfAlSvTqEwB0cp+a3OvEY=
+			Qz+NbJPg678rQV9ZnhL517wbRV8zIMETHFOKScVSBcg=
 			</data>
 		</dict>
 		<key>Headers/TurboUpiPlugin.h</key>
@@ -65,42 +85,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xhkqSmAt8YyfohsaWrcTsiNmjOQHq4uDgOI8um+rzXk=
+			SogLNdcRmerbYskUG5R+VzaijVZS4+dMmmPsH51Agmw=
 			</data>
 		</dict>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2KWlyJJNj07ydnHyssKvTv8BkLvfgp3HVQREXenZSIc=
+			uA6rhv1vNNySIC2apF9BBrTidzt0lk3r8hodCW9beFo=
 			</data>
 		</dict>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m8xtxAb+3ZbDk8J1lU39F2syMjfu2u09pRAp53/o5fk=
+			DqY0ZNlNakYh6tDLYY9kwDr97JZlrn1ZY58F+cULMfc=
 			</data>
 		</dict>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7oQg4ZGxln8huZ3RapoGzq0voU7uKwUbT0MWr6jcO0=
+			13npWJ3RZBapiPX9+uu3cg1/hvSC5iwA+ysLGqM8xk0=
 			</data>
 		</dict>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m8xtxAb+3ZbDk8J1lU39F2syMjfu2u09pRAp53/o5fk=
+			DqY0ZNlNakYh6tDLYY9kwDr97JZlrn1ZY58F+cULMfc=
 			</data>
 		</dict>
 		<key>Modules/TurboUpiPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/HKaG0XUadFkqHvbBqkBZI7XEM/7/h8Len7MFGeE5yE=
+			38q22Zfs0ijZYmKgVzVgkLGbpgyuiQp430GQhRn3ydo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -108,6 +128,41 @@
 			<key>hash2</key>
 			<data>
 			rrYVVg2KmilEZLMeHCNOnjKjQlG4nAQBB9N3ueopsyM=
+			</data>
+		</dict>
+		<key>Turbo-Headless.debug.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3js9Q2j2dv7KfsnQhh8PgvUeXfrO/vz/qqxYMvCrqsE=
+			</data>
+		</dict>
+		<key>Turbo-Headless.release.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lat2ecuE7yMKRDa3yH2Y3r4gaoo0QftBMEKm41ZSYKc=
+			</data>
+		</dict>
+		<key>Turbo-UI.debug.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tXnbkDWGJL0oUvoZdvDvflN0P8dyykQTGBl/IGHPn7o=
+			</data>
+		</dict>
+		<key>Turbo-UI.release.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QlPbUXQZfVMyybqtEl2ro+0dfQ8S5PN5aD3TvdjRzfY=
+			</data>
+		</dict>
+		<key>TurboCommonConfig.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1eH1yZs8nSf+ZZT+anK6s6rcdhGRQp/fmBoD9n/8l1A=
 			</data>
 		</dict>
 	</dict>
