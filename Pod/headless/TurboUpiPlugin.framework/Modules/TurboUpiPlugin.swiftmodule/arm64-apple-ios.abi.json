@@ -33,6 +33,13 @@
       },
       {
         "kind": "Import",
+        "name": "RazorpayCustom",
+        "printedName": "RazorpayCustom",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
         "name": "RazorpayTurboUPI",
         "printedName": "RazorpayTurboUPI",
         "declKind": "Import",
@@ -376,6 +383,13 @@
         "kind": "Import",
         "name": "Razorpay",
         "printedName": "Razorpay",
+        "declKind": "Import",
+        "moduleName": "TurboUpiPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "RazorpayCustom",
+        "printedName": "RazorpayCustom",
         "declKind": "Import",
         "moduleName": "TurboUpiPlugin"
       },
@@ -785,13 +799,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "UPITurboPlugin",
-                "printedName": "any Razorpay.UPITurboPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboPlugin"
+                "printedName": "any RazorpayCore.UPITurboPlugin",
+                "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)pluginInstance",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14pluginInstance8Razorpay08UPITurboC0_pyFZ",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14pluginInstance12RazorpayCore08UPITurboC0_pyFZ",
             "moduleName": "TurboUpiPlugin",
             "static": true,
             "declAttributes": [
@@ -808,13 +822,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "PluginPaymentDelegate",
-                "printedName": "any Razorpay.PluginPaymentDelegate",
-                "usr": "c:@M@Razorpay@objc(pl)PluginPaymentDelegate"
+                "printedName": "any RazorpayCore.PluginPaymentDelegate",
+                "usr": "c:@M@RazorpayCore@objc(pl)PluginPaymentDelegate"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)paymentPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC07paymentC08Razorpay0C15PaymentDelegate_pyFZ",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC07paymentC012RazorpayCore0C15PaymentDelegate_pyFZ",
             "moduleName": "TurboUpiPlugin",
             "static": true,
             "declAttributes": [
@@ -831,13 +845,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "UPITurboTPVUIPlugin",
-                "printedName": "any Razorpay.UPITurboTPVUIPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVUIPlugin"
+                "printedName": "any RazorpayCore.UPITurboTPVUIPlugin",
+                "usr": "c:@M@RazorpayCore@objc(pl)UPITurboTPVUIPlugin"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVUIPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC16turboTPVUIPlugin8Razorpay08UPITurboG0_pyFZ",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC16turboTPVUIPlugin12RazorpayCore08UPITurboG0_pyFZ",
             "moduleName": "TurboUpiPlugin",
             "static": true,
             "declAttributes": [
@@ -854,13 +868,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "UPITurboTPVPlugin",
-                "printedName": "any Razorpay.UPITurboTPVPlugin",
-                "usr": "c:@M@Razorpay@objc(pl)UPITurboTPVPlugin"
+                "printedName": "any RazorpayCore.UPITurboTPVPlugin",
+                "usr": "c:@M@RazorpayCore@objc(pl)UPITurboTPVPlugin"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TurboUpiPlugin@objc(cs)RZPTurboUPI(cm)turboTPVPlugin",
-            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14turboTPVPlugin8Razorpay08UPITurboG0_pyFZ",
+            "mangledName": "$s14TurboUpiPlugin11RZPTurboUPIC14turboTPVPlugin12RazorpayCore08UPITurboG0_pyFZ",
             "moduleName": "TurboUpiPlugin",
             "static": true,
             "declAttributes": [
@@ -11783,63 +11797,63 @@
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 687,
+      "offset": 709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 732,
+      "offset": 754,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 831,
+      "offset": 853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 1399,
+      "offset": 1421,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 1581,
+      "offset": 1603,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "StringLiteral",
-      "offset": 2702,
+      "offset": 2724,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "StringLiteral",
-      "offset": 2736,
+      "offset": 2758,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2801,
+      "offset": 2823,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/RazorpayTurbo.swift",
       "kind": "BooleanLiteral",
-      "offset": 9236,
+      "offset": 9258,
       "length": 4,
       "value": "true"
     },
@@ -11902,14 +11916,14 @@
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPluginEntity.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 930,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/nirman.kalia\/Documents\/org\/private\/razorpay-ios\/RazorpayIOS\/TurboUpiPlugin\/TurboPluginEntity.swift",
       "kind": "StringLiteral",
-      "offset": 893,
+      "offset": 961,
       "length": 2,
       "value": "\"\""
     },

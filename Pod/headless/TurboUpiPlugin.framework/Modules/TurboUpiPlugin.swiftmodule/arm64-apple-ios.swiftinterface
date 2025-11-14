@@ -5,6 +5,7 @@
 import CoreLocation
 import Foundation
 import Razorpay
+import RazorpayCustom
 import RazorpayTurboUPI
 import Swift
 @_exported import TurboUpiPlugin
@@ -48,10 +49,10 @@ extension TurboUpiPlugin.RazorpayTurbo {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
-  @objc public class func pluginInstance() -> any Razorpay.UPITurboPlugin
-  @objc public class func paymentPlugin() -> any Razorpay.PluginPaymentDelegate
-  @objc public class func turboTPVUIPlugin() -> any Razorpay.UPITurboTPVUIPlugin
-  @objc public class func turboTPVPlugin() -> any Razorpay.UPITurboTPVPlugin
+  @objc public class func pluginInstance() -> any RazorpayCore.UPITurboPlugin
+  @objc public class func paymentPlugin() -> any RazorpayCore.PluginPaymentDelegate
+  @objc public class func turboTPVUIPlugin() -> any RazorpayCore.UPITurboTPVUIPlugin
+  @objc public class func turboTPVPlugin() -> any RazorpayCore.UPITurboTPVPlugin
   @objc final public class func isDeviceOnboarded() -> Swift.Bool
   @objc final public class func clearSDKState()
   @objc override dynamic public init()
