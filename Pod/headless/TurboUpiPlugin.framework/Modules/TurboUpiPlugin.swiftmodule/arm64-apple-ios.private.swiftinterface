@@ -13,6 +13,37 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public typealias CallBack<T> = (_ response: T?, _ error: TurboUpiPlugin.TurboError?) -> Swift.Void
+@objc public protocol UpiTurboLinkAccountDelegate {
+  @objc func onResponse(_ action: TurboUpiPlugin.LinkUpiAction)
+}
+@objc public protocol UpiTurboTPVLinkAccountDelegate {
+  @objc func onResponse(_ action: TurboUpiPlugin.TPVLinkUpiAction)
+}
+@objc public protocol UPITurboResultDelegate {
+  @objc func onSuccessFetchingLinkedAcc(_ accList: [TurboUpiPlugin.UpiAccount])
+  @objc func onErrorFetchingLinkedAcc(_ error: TurboUpiPlugin.TurboError?)
+  @objc optional func onSuccessGetLinkedBankAccounts(_ accList: [TurboUpiPlugin.LinkedBankAccount])
+  @objc optional func onErrorFetchingLinkedBankAccounts(_ error: TurboUpiPlugin.TurboError?)
+}
+@objc @_inheritsConvenienceInitializers public class RazorpayTurbo : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension TurboUpiPlugin.RazorpayTurbo : RazorpayTurboUPI.TokenProvider3p {
+  public func fetchToken(completion: @escaping (RazorpayTurboUPI.SessionData?) -> Swift.Void)
+}
+extension TurboUpiPlugin.RazorpayTurbo {
+  public var hasToken: Swift.Bool {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class RazorpayTurboTPV : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol RazorpayTokenProvider {
+}
 @_hasMissingDesignatedInitializers @objc public class LinkUpiAction : ObjectiveC.NSObject {
   public typealias Bank = Any
   public typealias BankAccount = Any
@@ -213,12 +244,6 @@ import _SwiftConcurrencyShims
     get
   }
 }
-public protocol RazorpayTokenProvider {
-}
-@objc @_inheritsConvenienceInitializers public class RazorpayTurboTPV : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
   @objc public class func pluginInstance() -> any RazorpayCore.UPITurboPlugin
   @objc public class func paymentPlugin() -> any RazorpayCore.PluginPaymentDelegate
@@ -228,31 +253,6 @@ public protocol RazorpayTokenProvider {
   @objc final public class func clearSDKState()
   @objc override dynamic public init()
   @objc deinit
-}
-public typealias CallBack<T> = (_ response: T?, _ error: TurboUpiPlugin.TurboError?) -> Swift.Void
-@objc @_inheritsConvenienceInitializers public class RazorpayTurbo : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension TurboUpiPlugin.RazorpayTurbo : RazorpayTurboUPI.TokenProvider3p {
-  public func fetchToken(completion: @escaping (RazorpayTurboUPI.SessionData?) -> Swift.Void)
-}
-extension TurboUpiPlugin.RazorpayTurbo {
-  public var hasToken: Swift.Bool {
-    get
-  }
-}
-@objc public protocol UpiTurboLinkAccountDelegate {
-  @objc func onResponse(_ action: TurboUpiPlugin.LinkUpiAction)
-}
-@objc public protocol UpiTurboTPVLinkAccountDelegate {
-  @objc func onResponse(_ action: TurboUpiPlugin.TPVLinkUpiAction)
-}
-@objc public protocol UPITurboResultDelegate {
-  @objc func onSuccessFetchingLinkedAcc(_ accList: [TurboUpiPlugin.UpiAccount])
-  @objc func onErrorFetchingLinkedAcc(_ error: TurboUpiPlugin.TurboError?)
-  @objc optional func onSuccessGetLinkedBankAccounts(_ accList: [TurboUpiPlugin.LinkedBankAccount])
-  @objc optional func onErrorFetchingLinkedBankAccounts(_ error: TurboUpiPlugin.TurboError?)
 }
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Equatable {}
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Hashable {}
