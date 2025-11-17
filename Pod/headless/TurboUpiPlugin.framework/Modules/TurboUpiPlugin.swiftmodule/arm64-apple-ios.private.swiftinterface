@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TurboUpiPlugin
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CoreLocation
 import Foundation
 import Razorpay
@@ -22,22 +22,16 @@ public typealias CallBack<T> = (_ response: T?, _ error: TurboUpiPlugin.TurboErr
 }
 @objc public protocol UPITurboResultDelegate {
   @objc func onSuccessFetchingLinkedAcc(_ accList: [TurboUpiPlugin.UpiAccount])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onErrorFetchingLinkedAcc(_ error: TurboUpiPlugin.TurboError?)
-  #endif
   @objc optional func onSuccessGetLinkedBankAccounts(_ accList: [TurboUpiPlugin.LinkedBankAccount])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func onErrorFetchingLinkedBankAccounts(_ error: TurboUpiPlugin.TurboError?)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers public class RazorpayTurbo : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
 extension TurboUpiPlugin.RazorpayTurbo : RazorpayTurboUPI.TokenProvider3p {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func fetchToken(completion: @escaping (RazorpayTurboUPI.SessionData?) -> Swift.Void)
-  #endif
 }
 extension TurboUpiPlugin.RazorpayTurbo {
   public var hasToken: Swift.Bool {
@@ -45,16 +39,6 @@ extension TurboUpiPlugin.RazorpayTurbo {
   }
 }
 @objc @_inheritsConvenienceInitializers public class RazorpayTurboTPV : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
-  @objc public class func pluginInstance() -> any RazorpayCore.UPITurboPlugin
-  @objc public class func paymentPlugin() -> any RazorpayCore.PluginPaymentDelegate
-  @objc public class func turboTPVUIPlugin() -> any RazorpayCore.UPITurboTPVUIPlugin
-  @objc public class func turboTPVPlugin() -> any RazorpayCore.UPITurboTPVPlugin
-  @objc final public class func isDeviceOnboarded() -> Swift.Bool
-  @objc final public class func clearSDKState()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -81,9 +65,7 @@ public protocol RazorpayTokenProvider {
   @objc public var code: TurboUpiPlugin.TPVLinkActionCode
   @objc public var data: Any?
   @objc public var error: TurboUpiPlugin.TurboError?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(action: TurboUpiPlugin.TPVLinkActionCode, error: TurboUpiPlugin.TurboError? = nil)
-  #endif
   @objc public func registerDevice()
   @objc public func setUpiPin(_ bankAccount: TurboUpiPlugin.UpiBankAccount, _ card: TurboUpiPlugin.UpiCard)
   @objc deinit
@@ -97,11 +79,9 @@ public protocol RazorpayTokenProvider {
   @objc public var ifsc: Swift.String?
   @objc public var type: Swift.String?
   @objc public var vpa: TurboUpiPlugin.Vpa?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var beneficiaryName: Swift.String? {
     @objc get
   }
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class UpiAllAccounts : ObjectiveC.NSObject {
@@ -150,9 +130,7 @@ public protocol RazorpayTokenProvider {
   @objc final public let bank: TurboUpiPlugin.UpiBank?
   @objc final public let ifsc: Swift.String?
   @objc public var state: TurboUpiPlugin.UpiBankAccountState
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String?, creds: TurboUpiPlugin.UpiBankAccountCredentials?, accountNumber: Swift.String?, beneficiaryName: Swift.String?, type: Swift.String?, bank: TurboUpiPlugin.UpiBank?, ifsc: Swift.String?, bankAccount: Any, state: TurboUpiPlugin.UpiBankAccountState?, vpa: Swift.String?)
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LinkedBankAccount : TurboUpiPlugin.UpiBankAccount {
@@ -166,9 +144,7 @@ public protocol RazorpayTokenProvider {
   case linkingInProgress
   case linkingSuccess
   case linkingFailed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -193,9 +169,7 @@ public protocol RazorpayTokenProvider {
 }
 @objc public enum LinkActionCode : Swift.Int {
   case consent, sendSms, selectBank, selectBankAccount, setUpiPin, linkAccountResponse, loaderData, askForPermission
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -203,9 +177,7 @@ public protocol RazorpayTokenProvider {
 }
 @objc public enum TPVLinkActionCode : Swift.Int {
   case sendSms, setUpiPin, linkAccountResponse, loaderData
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -225,9 +197,7 @@ public protocol RazorpayTokenProvider {
   @objc public var bankName: Swift.String?
   @objc public var accountNumber: Swift.String
   @objc public var bankLogo: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(ifsc: Swift.String, bankName: Swift.String? = nil, accountNumber: Swift.String, bankLogo: Swift.String? = nil)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class TurboError : ObjectiveC.NSObject {
@@ -251,9 +221,7 @@ public protocol RazorpayTokenProvider {
   case gettingBankAccounts
   case linkingBankAccount
   case savingUserConsent
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -265,20 +233,26 @@ public protocol RazorpayTokenProvider {
   @objc public var timeStamp: Swift.String
   @objc public var type: TurboUpiPlugin.UpiConsentType
   @objc public var data: [Swift.String : Any]?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(acknowledge: Swift.Bool, consentMessage: Swift.String, timeStamp: Swift.String, type: TurboUpiPlugin.UpiConsentType, data: [Swift.String : Any]? = nil)
-  #endif
   @objc deinit
 }
 @objc public enum UpiConsentType : Swift.Int {
   case prefetchAndLink = 0
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class RZPTurboUPI : ObjectiveC.NSObject {
+  @objc public class func pluginInstance() -> any RazorpayCore.UPITurboPlugin
+  @objc public class func paymentPlugin() -> any RazorpayCore.PluginPaymentDelegate
+  @objc public class func turboTPVUIPlugin() -> any RazorpayCore.UPITurboTPVUIPlugin
+  @objc public class func turboTPVPlugin() -> any RazorpayCore.UPITurboTPVPlugin
+  @objc final public class func isDeviceOnboarded() -> Swift.Bool
+  @objc final public class func clearSDKState()
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Equatable {}
 extension TurboUpiPlugin.UpiBankAccountState : Swift.Hashable {}
