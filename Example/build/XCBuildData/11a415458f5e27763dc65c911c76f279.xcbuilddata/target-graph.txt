@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'Pods-razorpay-turbo-ui-pod_Example' in project 'Pods'
+➜ Explicit dependency on target 'razorpay-customui-pod' in project 'Pods'
+➜ Explicit dependency on target 'razorpay-turbo-custom' in project 'Pods'
+Target 'razorpay-turbo-custom' in project 'Pods'
+➜ Explicit dependency on target 'razorpay-customui-pod' in project 'Pods'
+Target 'razorpay-customui-pod' in project 'Pods' (no dependencies)
