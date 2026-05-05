@@ -27,8 +27,8 @@ public typealias CallBack<T> = (_ response: T?, _ error: TurboUpiPlugin.TurboErr
   @objc optional func onErrorFetchingLinkedBankAccounts(_ error: TurboUpiPlugin.TurboError?)
 }
 @objc @_inheritsConvenienceInitializers public class RazorpayTurbo : ObjectiveC.NSObject {
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension TurboUpiPlugin.RazorpayTurbo : RazorpayTurboUPI.TokenProvider3p {
   public func fetchToken(completion: @escaping (RazorpayTurboUPI.SessionData?) -> Swift.Void)
