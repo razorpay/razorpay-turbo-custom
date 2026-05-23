@@ -1,0 +1,4 @@
+framework module RazorpayTurboUPI {
+  header "RazorpayTurboUPI-Swift.h"
+  requires objc
+}
