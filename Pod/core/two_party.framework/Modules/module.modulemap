@@ -7,5 +7,4 @@ framework module two_party {
 
 module two_party.Swift {
   header "two_party-Swift.h"
-  requires objc
 }

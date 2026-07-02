@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-turbo-custom'
-  s.version          = "2.1.10"
+  s.version          = "2.1.11"
   s.summary          = "CocoaPod implementation of Razorpay's Turbo in-app UPI Payments"
 
   s.description      = <<-DESC
@@ -29,10 +29,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
 
-  s.subspec 'Core' do |core| 
+  s.subspec 'Core' do |core|
     core.vendored_frameworks = [
       'Pod/core/CommonLibrary.framework',
-      'Pod/core/Sentry.framework',
       'Pod/core/two_party.framework'
     ]
   end
