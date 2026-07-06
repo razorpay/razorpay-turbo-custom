@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
       'Pod/headless/TurboUpiPlugin.framework'
     ]
     headless.dependency 'razorpay-turbo-custom/Core'
-    headless.dependency 'razorpay-customui-pod'
+    headless.dependency 'razorpay-customui-pod', '2.1.4'
   end
 
   s.subspec 'ui' do |ui| 
