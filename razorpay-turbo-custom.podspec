@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/razorpay/razorpay-turbo-custom.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
-  s.swift_version = '5.0'
+  s.swift_version = '5.1'
 
   s.subspec 'Core' do |core|
     core.vendored_frameworks = [
