@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'razorpay-turbo-custom'
-  s.version          = "2.1.11"
+  s.version          = "2.1.11-beta.1"
   s.summary          = "CocoaPod implementation of Razorpay's Turbo in-app UPI Payments"
 
   s.description      = <<-DESC
