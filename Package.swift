@@ -19,6 +19,9 @@ let package = Package(
             ]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/razorpay/razorpay-customui-pod.git", from: "2.1.4")
+    ],
     targets: [
         .binaryTarget(
             name: "CommonLibrary",
