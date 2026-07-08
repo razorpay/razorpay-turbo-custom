@@ -12,6 +12,7 @@ let package = Package(
         .library(
             name: "RazorpayTurboCustom-Headless",
             targets: [
+                "RazorpayTurboCustomDependencies",
                 "CommonLibrary",
                 "two_party",
                 "RazorpayTurboUPI",
@@ -20,9 +21,16 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/razorpay/razorpay-customui-pod.git")
+        .package(url: "https://github.com/razorpay/razorpay-customui-pod.git", from: "2.2.0")
     ],
     targets: [
+        .target(
+            name: "RazorpayTurboCustomDependencies",
+            dependencies: [
+                .product(name: "RazorpayCustomUI", package: "razorpay-customui-pod")
+            ],
+            path: "Sources/RazorpayTurboCustomDependencies"
+        ),
         .binaryTarget(
             name: "CommonLibrary",
             url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.1/CommonLibrary.xcframework.zip",
