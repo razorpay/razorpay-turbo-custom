@@ -43,8 +43,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "RazorpayTurboUPI",
-            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.2/RazorpayTurboUPI.xcframework.zip",
-            checksum: "858d2ccbcf0ce1a048cf55240991b858bb835ca0dc179a9570c7187a52723ea9"
+            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.3/RazorpayTurboUPI.xcframework.zip",
+            checksum: "20288f5eebdb1c2552be5aafd97ed2bfe7a851a4468ec82b90efcd09f35876e5"
         ),
         .binaryTarget(
             name: "TurboUpiPlugin",
