@@ -33,23 +33,23 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CommonLibrary",
-            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.1/CommonLibrary.xcframework.zip",
-            checksum: "0e15808ac18e403d897f2d08f76cd455eece56c3dbcde2b697e22db9800a2b6c"
+            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.4/CommonLibrary.xcframework.zip",
+            checksum: "a2d16f8cd0ae8d719b85497517d1c133095c1462b5b4ff47fed91e491d0d27a0"
         ),
         .binaryTarget(
             name: "two_party",
-            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.1/two_party.xcframework.zip",
-            checksum: "65b4082782fa8a043a474fcd17e989012a1ea6d296b3ca2ae3c5b415996c6469"
+            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.4/two_party.xcframework.zip",
+            checksum: "8b193960c901bb98445b3d9796b0381abc70bbdfaa27f601093ad4679d516583"
         ),
         .binaryTarget(
             name: "RazorpayTurboUPI",
-            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.3/RazorpayTurboUPI.xcframework.zip",
-            checksum: "20288f5eebdb1c2552be5aafd97ed2bfe7a851a4468ec82b90efcd09f35876e5"
+            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.4/RazorpayTurboUPI.xcframework.zip",
+            checksum: "0610a679385e4819952235b649427eca74ad17460b10ad18815bf4ce0dfc47f6"
         ),
         .binaryTarget(
             name: "TurboUpiPlugin",
-            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.1/TurboUpiPlugin.xcframework.zip",
-            checksum: "ca3f11fa09014a2bcf8797d28bda1054739d400edea2defbca0b0f7c225913b2"
+            url: "https://github.com/razorpay/razorpay-turbo-custom/releases/download/2.1.11-beta.4/TurboUpiPlugin.xcframework.zip",
+            checksum: "a2df69a867437dfbca353f0722677d3312b7d88ba77291b850fc8c2347e649e6"
         )
     ]
 )
